@@ -1,0 +1,13 @@
+module path_planner(
+	input clk_3125,
+	output reg [7:0] PATH_PLANNED[0:15];
+);
+
+always @(negedge clk) begin
+    if(MemWrite && !reset) begin
+        if (DataAdr === 32'h02000008) begin
+            $display("Expected NODE POINT = %d, Actual NODE POINT = %d", register_array[i], WriteData);
+            i = i + 1'b1;
+        end
+    end
+end

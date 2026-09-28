@@ -1,0 +1,247 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 16 16 288 352)
+	(text "main_controller" (rect 5 0 65 12)(font "Arial" ))
+	(text "inst" (rect 8 320 20 332)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clk_3125" (rect 0 0 34 12)(font "Arial" ))
+		(text "clk_3125" (rect 21 27 55 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 1))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "rx_complete" (rect 0 0 49 12)(font "Arial" ))
+		(text "rx_complete" (rect 21 43 70 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 1))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "rx_data[7..0]" (rect 0 0 50 12)(font "Arial" ))
+		(text "rx_data[7..0]" (rect 21 59 71 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "started" (rect 0 0 27 12)(font "Arial" ))
+		(text "started" (rect 21 75 48 87)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80)(line_width 1))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "color[1..0]" (rect 0 0 37 12)(font "Arial" ))
+		(text "color[1..0]" (rect 21 91 58 103)(font "Arial" ))
+		(line (pt 0 96)(pt 16 96)(line_width 3))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "node[4..0]" (rect 0 0 40 12)(font "Arial" ))
+		(text "node[4..0]" (rect 21 107 61 119)(font "Arial" ))
+		(line (pt 0 112)(pt 16 112)(line_width 3))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "tx_done" (rect 0 0 31 12)(font "Arial" ))
+		(text "tx_done" (rect 21 123 52 135)(font "Arial" ))
+		(line (pt 0 128)(pt 16 128)(line_width 1))
+	)
+	(port
+		(pt 0 144)
+		(input)
+		(text "MemWrite" (rect 0 0 43 12)(font "Arial" ))
+		(text "MemWrite" (rect 21 139 64 151)(font "Arial" ))
+		(line (pt 0 144)(pt 16 144)(line_width 1))
+	)
+	(port
+		(pt 0 160)
+		(input)
+		(text "reset" (rect 0 0 20 12)(font "Arial" ))
+		(text "reset" (rect 21 155 41 167)(font "Arial" ))
+		(line (pt 0 160)(pt 16 160)(line_width 1))
+	)
+	(port
+		(pt 0 176)
+		(input)
+		(text "DataAdr[31..0]" (rect 0 0 59 12)(font "Arial" ))
+		(text "DataAdr[31..0]" (rect 21 171 80 183)(font "Arial" ))
+		(line (pt 0 176)(pt 16 176)(line_width 3))
+	)
+	(port
+		(pt 0 192)
+		(input)
+		(text "WriteData[31..0]" (rect 0 0 64 12)(font "Arial" ))
+		(text "WriteData[31..0]" (rect 21 187 85 199)(font "Arial" ))
+		(line (pt 0 192)(pt 16 192)(line_width 3))
+	)
+	(port
+		(pt 0 208)
+		(input)
+		(text "en_yellow" (rect 0 0 38 12)(font "Arial" ))
+		(text "en_yellow" (rect 21 203 59 215)(font "Arial" ))
+		(line (pt 0 208)(pt 16 208)(line_width 1))
+	)
+	(port
+		(pt 0 224)
+		(input)
+		(text "obs_pick_drop[1..0]" (rect 0 0 77 12)(font "Arial" ))
+		(text "obs_pick_drop[1..0]" (rect 21 219 98 231)(font "Arial" ))
+		(line (pt 0 224)(pt 16 224)(line_width 3))
+	)
+	(port
+		(pt 0 240)
+		(input)
+		(text "obstacle" (rect 0 0 31 12)(font "Arial" ))
+		(text "obstacle" (rect 21 235 52 247)(font "Arial" ))
+		(line (pt 0 240)(pt 16 240)(line_width 1))
+	)
+	(port
+		(pt 272 32)
+		(output)
+		(text "start_run" (rect 0 0 36 12)(font "Arial" ))
+		(text "start_run" (rect 215 27 251 39)(font "Arial" ))
+		(line (pt 272 32)(pt 256 32)(line_width 1))
+	)
+	(port
+		(pt 272 48)
+		(output)
+		(text "tx_start" (rect 0 0 30 12)(font "Arial" ))
+		(text "tx_start" (rect 221 43 251 55)(font "Arial" ))
+		(line (pt 272 48)(pt 256 48)(line_width 1))
+	)
+	(port
+		(pt 272 64)
+		(output)
+		(text "tx_data[7..0]" (rect 0 0 49 12)(font "Arial" ))
+		(text "tx_data[7..0]" (rect 202 59 251 71)(font "Arial" ))
+		(line (pt 272 64)(pt 256 64)(line_width 3))
+	)
+	(port
+		(pt 272 80)
+		(output)
+		(text "en_path" (rect 0 0 31 12)(font "Arial" ))
+		(text "en_path" (rect 220 75 251 87)(font "Arial" ))
+		(line (pt 272 80)(pt 256 80)(line_width 1))
+	)
+	(port
+		(pt 272 96)
+		(output)
+		(text "present_node[5..0]" (rect 0 0 74 12)(font "Arial" ))
+		(text "present_node[5..0]" (rect 177 91 251 103)(font "Arial" ))
+		(line (pt 272 96)(pt 256 96)(line_width 3))
+	)
+	(port
+		(pt 272 112)
+		(output)
+		(text "previous_node[5..0]" (rect 0 0 79 12)(font "Arial" ))
+		(text "previous_node[5..0]" (rect 172 107 251 119)(font "Arial" ))
+		(line (pt 272 112)(pt 256 112)(line_width 3))
+	)
+	(port
+		(pt 272 128)
+		(output)
+		(text "future_node[5..0]" (rect 0 0 68 12)(font "Arial" ))
+		(text "future_node[5..0]" (rect 183 123 251 135)(font "Arial" ))
+		(line (pt 272 128)(pt 256 128)(line_width 3))
+	)
+	(port
+		(pt 272 144)
+		(output)
+		(text "SP[5..0]" (rect 0 0 31 12)(font "Arial" ))
+		(text "SP[5..0]" (rect 220 139 251 151)(font "Arial" ))
+		(line (pt 272 144)(pt 256 144)(line_width 3))
+	)
+	(port
+		(pt 272 160)
+		(output)
+		(text "EP[5..0]" (rect 0 0 33 12)(font "Arial" ))
+		(text "EP[5..0]" (rect 218 155 251 167)(font "Arial" ))
+		(line (pt 272 160)(pt 256 160)(line_width 3))
+	)
+	(port
+		(pt 272 176)
+		(output)
+		(text "cpu_en" (rect 0 0 29 12)(font "Arial" ))
+		(text "cpu_en" (rect 222 171 251 183)(font "Arial" ))
+		(line (pt 272 176)(pt 256 176)(line_width 1))
+	)
+	(port
+		(pt 272 192)
+		(output)
+		(text "COLOR_STATE[2..0]" (rect 0 0 94 12)(font "Arial" ))
+		(text "COLOR_STATE[2..0]" (rect 157 187 251 199)(font "Arial" ))
+		(line (pt 272 192)(pt 256 192)(line_width 3))
+	)
+	(port
+		(pt 272 208)
+		(output)
+		(text "bot_state[2..0]" (rect 0 0 56 12)(font "Arial" ))
+		(text "bot_state[2..0]" (rect 195 203 251 215)(font "Arial" ))
+		(line (pt 272 208)(pt 256 208)(line_width 3))
+	)
+	(port
+		(pt 272 224)
+		(output)
+		(text "pwm_out1" (rect 0 0 40 12)(font "Arial" ))
+		(text "pwm_out1" (rect 211 219 251 231)(font "Arial" ))
+		(line (pt 272 224)(pt 256 224)(line_width 1))
+	)
+	(port
+		(pt 272 240)
+		(output)
+		(text "pwm_out2" (rect 0 0 41 12)(font "Arial" ))
+		(text "pwm_out2" (rect 210 235 251 247)(font "Arial" ))
+		(line (pt 272 240)(pt 256 240)(line_width 1))
+	)
+	(port
+		(pt 272 256)
+		(output)
+		(text "EI[2..0]" (rect 0 0 29 12)(font "Arial" ))
+		(text "EI[2..0]" (rect 222 251 251 263)(font "Arial" ))
+		(line (pt 272 256)(pt 256 256)(line_width 3))
+	)
+	(port
+		(pt 272 272)
+		(output)
+		(text "color_to_glow[1..0]" (rect 0 0 73 12)(font "Arial" ))
+		(text "color_to_glow[1..0]" (rect 178 267 251 279)(font "Arial" ))
+		(line (pt 272 272)(pt 256 272)(line_width 3))
+	)
+	(port
+		(pt 272 288)
+		(output)
+		(text "reset_var" (rect 0 0 40 12)(font "Arial" ))
+		(text "reset_var" (rect 211 283 251 295)(font "Arial" ))
+		(line (pt 272 288)(pt 256 288)(line_width 1))
+	)
+	(drawing
+		(rectangle (rect 16 16 256 320)(line_width 1))
+	)
+)

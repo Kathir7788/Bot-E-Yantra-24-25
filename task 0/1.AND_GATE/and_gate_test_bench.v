@@ -1,0 +1,18 @@
+module and_gate_test_bench;
+
+reg a, b;
+wire out1;
+
+// Defining unit under test i.e., AND_GATE
+AND_GATE uut (.a(a), .b(b), .out(out1));
+
+// Assigning all possible states for input A and B
+initial begin
+//    $monitor(a,b,out1);
+    a = 0; b = 0; #100;
+    a = 0; b = 1; #100;
+    a = 1; b = 0; #100;
+    a = 1; b = 1; #100;
+end
+
+endmodule

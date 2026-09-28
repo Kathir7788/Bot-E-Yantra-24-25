@@ -1,0 +1,129 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "adc_cs",
+					"strict" : false
+				},
+				{
+					"name" : "adc_din",
+					"strict" : false
+				},
+				{
+					"name" : "AF",
+					"strict" : false
+				},
+				{
+					"name" : "BF",
+					"strict" : false
+				},
+				{
+					"name" : "BB",
+					"strict" : false
+				},
+				{
+					"name" : "AB",
+					"strict" : false
+				},
+				{
+					"name" : "adc_sck",
+					"strict" : false
+				},
+				{
+					"name" : "tx",
+					"strict" : false
+				},
+				{
+					"name" : "s2",
+					"strict" : false
+				},
+				{
+					"name" : "s3",
+					"strict" : false
+				},
+				{
+					"name" : "EL1_b",
+					"strict" : false
+				},
+				{
+					"name" : "EL2_b",
+					"strict" : false
+				},
+				{
+					"name" : "EL3_b",
+					"strict" : false
+				},
+				{
+					"name" : "MI_B",
+					"strict" : false
+				},
+				{
+					"name" : "EL1_r",
+					"strict" : false
+				},
+				{
+					"name" : "EL2_r",
+					"strict" : false
+				},
+				{
+					"name" : "EL3_r",
+					"strict" : false
+				},
+				{
+					"name" : "MI_R",
+					"strict" : false
+				},
+				{
+					"name" : "EL1_g",
+					"strict" : false
+				},
+				{
+					"name" : "EL2_g",
+					"strict" : false
+				},
+				{
+					"name" : "EL3_g",
+					"strict" : false
+				},
+				{
+					"name" : "MI_G",
+					"strict" : false
+				},
+				{
+					"name" : "clk_50M",
+					"strict" : false
+				},
+				{
+					"name" : "rx",
+					"strict" : false
+				},
+				{
+					"name" : "cs_out",
+					"strict" : false
+				},
+				{
+					"name" : "adc_dout",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tms",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tck",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tdi",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tdo",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

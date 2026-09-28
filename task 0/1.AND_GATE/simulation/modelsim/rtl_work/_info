@@ -1,0 +1,60 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/e_yantra/1.AND_GATE/simulation/modelsim
+vAND_GATE
+Z1 !s110 1725101116
+!i10b 1
+!s100 Wg3fJ3N6`[oQZEa85D9Q;0
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IFV7PeTod5]zM0i:ZbN4T;2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1724952908
+8E:/e_yantra/1.AND_GATE/AND_GATE.v
+FE:/e_yantra/1.AND_GATE/AND_GATE.v
+!i122 0
+L0 1 7
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1725101116.000000
+!s107 E:/e_yantra/1.AND_GATE/AND_GATE.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/e_yantra/1.AND_GATE|E:/e_yantra/1.AND_GATE/AND_GATE.v|
+!i113 1
+Z6 o-vlog01compat -work work
+Z7 !s92 -vlog01compat -work work +incdir+E:/e_yantra/1.AND_GATE
+Z8 tCvgOpt 0
+n@a@n@d_@g@a@t@e
+vand_gate_test_bench
+R1
+!i10b 1
+!s100 fJj?E?5g6^_cS9FP6UTHI3
+R2
+IFo`WXh@bd>5>jnQ<@m_BS2
+R3
+R0
+w1725096620
+8E:/e_yantra/1.AND_GATE/and_gate_test_bench.v
+FE:/e_yantra/1.AND_GATE/and_gate_test_bench.v
+!i122 1
+L0 1 18
+R4
+r1
+!s85 0
+31
+R5
+!s107 E:/e_yantra/1.AND_GATE/and_gate_test_bench.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/e_yantra/1.AND_GATE|E:/e_yantra/1.AND_GATE/and_gate_test_bench.v|
+!i113 1
+R6
+R7
+R8

@@ -1,0 +1,20 @@
+module pwm_generator(
+    input clk_1MHz,
+    input [3:0] pulse_width,
+    output reg pwm_signal
+);
+
+initial begin
+   pwm_signal = 1;
+end
+
+reg [7:0] counter= 0;
+always @(posedge clk_1MHz) begin
+	if (counter < 255) counter <= counter + 1;
+	else counter = 0;
+	
+	if(counter < 130) pwm_signal <=1;//pulse_width*8
+	else pwm_signal <= 0;
+end
+
+endmodule

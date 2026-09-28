@@ -1,0 +1,7 @@
+
+State Machine - |t1b_cd_fd|state
+Name state.BLUE_FILTER state.CLEAR_FILTER state.GREEN_FILTER state.RED_FILTER 
+state.RED_FILTER 0 0 0 0 
+state.GREEN_FILTER 0 0 1 1 
+state.CLEAR_FILTER 0 1 0 1 
+state.BLUE_FILTER 1 0 0 1 

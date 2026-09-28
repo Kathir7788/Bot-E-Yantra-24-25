@@ -1,0 +1,395 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/e_yantra/task 2/eb_3699_task2b/t1c_riscv_cpu/simulation/modelsim
+vadder
+Z1 !s110 1740921394
+!i10b 1
+!s100 jXE67fZjiCj2W4l?`i:H?0
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I>864l=K4U0Fo=_nh30Weg1
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z4 w1731494364
+8E:/e_yantra/task 2/eb_3699_task2b/t1c_riscv_cpu/code/components/adder.v
+FE:/e_yantra/task 2/eb_3699_task2b/t1c_riscv_cpu/code/components/adder.v
+!i122 13
+L0 4 8
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1740921394.000000
+!s107 E:/e_yantra/task 2/eb_3699_task2b/t1c_riscv_cpu/code/components/adder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/e_yantra/task 2/eb_3699_task2b/t1c_riscv_cpu/code/components|E:/e_yantra/task 2/eb_3699_task2b/t1c_riscv_cpu/code/components/adder.v|
+!i113 1
+Z7 o-vlog01compat -work work
+Z8 !s92 -vlog01compat -work work {+incdir+E:/e_yantra/task 2/eb_3699_task2b/t1c_riscv_cpu/code/components}
+Z9 tCvgOpt 0
+valu
+R1
+!i10b 1
+!s100 GoIdKfFLP:z>Tz`KbHFUn3
+R2
+I3bm<GQM:Rb4z4@3FZz?Nj1
+R3
+R0
+w1740918877
+8E:/e_yantra/task 2/eb_3699_task2b/t1c_riscv_cpu/code/components/alu.v
+FE:/e_yantra/task 2/eb_3699_task2b/t1c_riscv_cpu/code/components/alu.v
+!i122 12
+L0 4 30
+R5
+r1
+!s85 0
+31
+Z10 !s108 1740921393.000000
+!s107 E:/e_yantra/task 2/eb_3699_task2b/t1c_riscv_cpu/code/components/alu.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/e_yantra/task 2/eb_3699_task2b/t1c_riscv_cpu/code/components|E:/e_yantra/task 2/eb_3699_task2b/t1c_riscv_cpu/code/components/alu.v|
+!i113 1
+R7
+R8
+R9
+valu_decoder
+Z11 !s110 1740921393
+!i10b 1
+!s100 ?Eo_12cDL;2AA=O`MB54j3
+R2
+I650E5Qfz7c0=:bS5YaAmz2
+R3
+R0
+w1740243108
+8E:/e_yantra/task 2/eb_3699_task2b/t1c_riscv_cpu/code/components/alu_decoder.v
+FE:/e_yantra/task 2/eb_3699_task2b/t1c_riscv_cpu/code/components/alu_decoder.v
+!i122 11
+L0 4 37
+R5
+r1
+!s85 0
+31
+R10
+!s107 E:/e_yantra/task 2/eb_3699_task2b/t1c_riscv_cpu/code/components/alu_decoder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/e_yantra/task 2/eb_3699_task2b/t1c_riscv_cpu/code/components|E:/e_yantra/task 2/eb_3699_task2b/t1c_riscv_cpu/code/components/alu_decoder.v|
+!i113 1
+R7
+R8
+R9
+vcontroller
+R11
+!i10b 1
+!s100 hYB_iBF<>;a40cnz90bDi3
+R2
+I`WU;YF2l657C<J4Tbd7663
+R3
+R0
+Z12 w1740920837
+8E:/e_yantra/task 2/eb_3699_task2b/t1c_riscv_cpu/code/components/controller.v
+FE:/e_yantra/task 2/eb_3699_task2b/t1c_riscv_cpu/code/components/controller.v
+!i122 10
+L0 4 25
+R5
+r1
+!s85 0
+31
+R10
+!s107 E:/e_yantra/task 2/eb_3699_task2b/t1c_riscv_cpu/code/components/controller.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/e_yantra/task 2/eb_3699_task2b/t1c_riscv_cpu/code/components|E:/e_yantra/task 2/eb_3699_task2b/t1c_riscv_cpu/code/components/controller.v|
+!i113 1
+R7
+R8
+R9
+vdata_mem
+Z13 !s110 1740921391
+!i10b 1
+!s100 GJa_l=b=W@5aKF:B^cdlU0
+R2
+Ik<9iLNG8[eb^5m]GWGzD20
+R3
+R0
+w1740243066
+8E:/e_yantra/task 2/eb_3699_task2b/t1c_riscv_cpu/code/data_mem.v
+FE:/e_yantra/task 2/eb_3699_task2b/t1c_riscv_cpu/code/data_mem.v
+!i122 2
+L0 4 75
+R5
+r1
+!s85 0
+31
+Z14 !s108 1740921391.000000
+!s107 E:/e_yantra/task 2/eb_3699_task2b/t1c_riscv_cpu/code/data_mem.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/e_yantra/task 2/eb_3699_task2b/t1c_riscv_cpu/code|E:/e_yantra/task 2/eb_3699_task2b/t1c_riscv_cpu/code/data_mem.v|
+!i113 1
+R7
+Z15 !s92 -vlog01compat -work work {+incdir+E:/e_yantra/task 2/eb_3699_task2b/t1c_riscv_cpu/code}
+R9
+vdatapath
+R11
+!i10b 1
+!s100 E^d2d=OZ0G[VeJ8zOlciS1
+R2
+Ibi7]CS_4>fkW8zFo60SX^0
+R3
+R0
+R12
+8E:/e_yantra/task 2/eb_3699_task2b/t1c_riscv_cpu/code/components/datapath.v
+FE:/e_yantra/task 2/eb_3699_task2b/t1c_riscv_cpu/code/components/datapath.v
+!i122 9
+L0 3 52
+R5
+r1
+!s85 0
+31
+Z16 !s108 1740921392.000000
+!s107 E:/e_yantra/task 2/eb_3699_task2b/t1c_riscv_cpu/code/components/datapath.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/e_yantra/task 2/eb_3699_task2b/t1c_riscv_cpu/code/components|E:/e_yantra/task 2/eb_3699_task2b/t1c_riscv_cpu/code/components/datapath.v|
+!i113 1
+R7
+R8
+R9
+vimm_extend
+Z17 !s110 1740921392
+!i10b 1
+!s100 KCY0HN8a_SDDT@o^3341e2
+R2
+IoJ^LA=eBM;L>:kPXWgfKA2
+R3
+R0
+R12
+8E:/e_yantra/task 2/eb_3699_task2b/t1c_riscv_cpu/code/components/imm_extend.v
+FE:/e_yantra/task 2/eb_3699_task2b/t1c_riscv_cpu/code/components/imm_extend.v
+!i122 8
+L0 3 21
+R5
+r1
+!s85 0
+31
+R16
+!s107 E:/e_yantra/task 2/eb_3699_task2b/t1c_riscv_cpu/code/components/imm_extend.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/e_yantra/task 2/eb_3699_task2b/t1c_riscv_cpu/code/components|E:/e_yantra/task 2/eb_3699_task2b/t1c_riscv_cpu/code/components/imm_extend.v|
+!i113 1
+R7
+R8
+R9
+vinstr_mem
+Z18 !s110 1740921395
+!i10b 1
+!s100 @^o]U]1ZejOW]n=R>df@k3
+R2
+IM2@T][UonJFj0XQia`KZK1
+R3
+R0
+w1731503378
+8E:/e_yantra/task 2/eb_3699_task2b/t1c_riscv_cpu/code/instr_mem.v
+FE:/e_yantra/task 2/eb_3699_task2b/t1c_riscv_cpu/code/instr_mem.v
+!i122 14
+L0 4 19
+R5
+r1
+!s85 0
+31
+R6
+!s107 E:/e_yantra/task 2/eb_3699_task2b/t1c_riscv_cpu/code/instr_mem.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/e_yantra/task 2/eb_3699_task2b/t1c_riscv_cpu/code|E:/e_yantra/task 2/eb_3699_task2b/t1c_riscv_cpu/code/instr_mem.v|
+!i113 1
+R7
+R15
+R9
+vmain_decoder
+R17
+!i10b 1
+!s100 5U?dQP[c@`@SN@YbIo:8K1
+R2
+IbWTdV6GW`3DGF61CC7EKW0
+R3
+R0
+w1740920836
+8E:/e_yantra/task 2/eb_3699_task2b/t1c_riscv_cpu/code/components/main_decoder.v
+FE:/e_yantra/task 2/eb_3699_task2b/t1c_riscv_cpu/code/components/main_decoder.v
+!i122 7
+L0 4 45
+R5
+r1
+!s85 0
+31
+R16
+!s107 E:/e_yantra/task 2/eb_3699_task2b/t1c_riscv_cpu/code/components/main_decoder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/e_yantra/task 2/eb_3699_task2b/t1c_riscv_cpu/code/components|E:/e_yantra/task 2/eb_3699_task2b/t1c_riscv_cpu/code/components/main_decoder.v|
+!i113 1
+R7
+R8
+R9
+vmux2
+R17
+!i10b 1
+!s100 O<Ld`3jD6QL?6PIEe_QAk1
+R2
+ISRaDHOIgBQBne82kMieEb1
+R3
+R0
+R4
+8E:/e_yantra/task 2/eb_3699_task2b/t1c_riscv_cpu/code/components/mux2.v
+FE:/e_yantra/task 2/eb_3699_task2b/t1c_riscv_cpu/code/components/mux2.v
+!i122 6
+Z19 L0 4 9
+R5
+r1
+!s85 0
+31
+R16
+!s107 E:/e_yantra/task 2/eb_3699_task2b/t1c_riscv_cpu/code/components/mux2.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/e_yantra/task 2/eb_3699_task2b/t1c_riscv_cpu/code/components|E:/e_yantra/task 2/eb_3699_task2b/t1c_riscv_cpu/code/components/mux2.v|
+!i113 1
+R7
+R8
+R9
+vmux4
+R17
+!i10b 1
+!s100 V4YdM>hK^I8CMb?cH8Cej3
+R2
+I@629kgeV7:GM9<>:@M5TP3
+R3
+R0
+R4
+8E:/e_yantra/task 2/eb_3699_task2b/t1c_riscv_cpu/code/components/mux4.v
+FE:/e_yantra/task 2/eb_3699_task2b/t1c_riscv_cpu/code/components/mux4.v
+!i122 5
+R19
+R5
+r1
+!s85 0
+31
+R14
+!s107 E:/e_yantra/task 2/eb_3699_task2b/t1c_riscv_cpu/code/components/mux4.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/e_yantra/task 2/eb_3699_task2b/t1c_riscv_cpu/code/components|E:/e_yantra/task 2/eb_3699_task2b/t1c_riscv_cpu/code/components/mux4.v|
+!i113 1
+R7
+R8
+R9
+vreg_file
+R13
+!i10b 1
+!s100 IHMVNeW8dTl7OY^X[]aLN0
+R2
+ITK]`hVhYGl8Ce?@jAZg>k0
+R3
+R0
+R4
+8E:/e_yantra/task 2/eb_3699_task2b/t1c_riscv_cpu/code/components/reg_file.v
+FE:/e_yantra/task 2/eb_3699_task2b/t1c_riscv_cpu/code/components/reg_file.v
+!i122 4
+L0 8 27
+R5
+r1
+!s85 0
+31
+R14
+!s107 E:/e_yantra/task 2/eb_3699_task2b/t1c_riscv_cpu/code/components/reg_file.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/e_yantra/task 2/eb_3699_task2b/t1c_riscv_cpu/code/components|E:/e_yantra/task 2/eb_3699_task2b/t1c_riscv_cpu/code/components/reg_file.v|
+!i113 1
+R7
+R8
+R9
+vreset_ff
+R13
+!i10b 1
+!s100 c1I5T0L8]]ZK0dn2hg0_F0
+R2
+I]He`3]mLAXCEeJ]C^?UXJ1
+R3
+R0
+R4
+8E:/e_yantra/task 2/eb_3699_task2b/t1c_riscv_cpu/code/components/reset_ff.v
+FE:/e_yantra/task 2/eb_3699_task2b/t1c_riscv_cpu/code/components/reset_ff.v
+!i122 3
+L0 4 12
+R5
+r1
+!s85 0
+31
+R14
+!s107 E:/e_yantra/task 2/eb_3699_task2b/t1c_riscv_cpu/code/components/reset_ff.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/e_yantra/task 2/eb_3699_task2b/t1c_riscv_cpu/code/components|E:/e_yantra/task 2/eb_3699_task2b/t1c_riscv_cpu/code/components/reset_ff.v|
+!i113 1
+R7
+R8
+R9
+vriscv_cpu
+Z20 !s110 1740921390
+!i10b 1
+!s100 _m1FHNodYX?1@GRH8Ib800
+R2
+Iamd;HC6n`DHD;j?7MJ1zi1
+R3
+R0
+R12
+8E:/e_yantra/task 2/eb_3699_task2b/t1c_riscv_cpu/code/riscv_cpu.v
+FE:/e_yantra/task 2/eb_3699_task2b/t1c_riscv_cpu/code/riscv_cpu.v
+!i122 1
+L0 4 23
+R5
+r1
+!s85 0
+31
+!s108 1740921390.000000
+!s107 E:/e_yantra/task 2/eb_3699_task2b/t1c_riscv_cpu/code/riscv_cpu.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/e_yantra/task 2/eb_3699_task2b/t1c_riscv_cpu/code|E:/e_yantra/task 2/eb_3699_task2b/t1c_riscv_cpu/code/riscv_cpu.v|
+!i113 1
+R7
+R15
+R9
+vt1c_riscv_cpu
+R20
+!i10b 1
+!s100 PmCiAnMN`2W79nM2_Lb=d2
+R2
+I[]5R1U5CLC:?=m7GFf>Xl2
+R3
+R0
+R4
+8E:/e_yantra/task 2/eb_3699_task2b/t1c_riscv_cpu/code/t1c_riscv_cpu.v
+FE:/e_yantra/task 2/eb_3699_task2b/t1c_riscv_cpu/code/t1c_riscv_cpu.v
+!i122 0
+L0 4 31
+R5
+r1
+!s85 0
+31
+!s108 1740921389.000000
+!s107 E:/e_yantra/task 2/eb_3699_task2b/t1c_riscv_cpu/code/t1c_riscv_cpu.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/e_yantra/task 2/eb_3699_task2b/t1c_riscv_cpu/code|E:/e_yantra/task 2/eb_3699_task2b/t1c_riscv_cpu/code/t1c_riscv_cpu.v|
+!i113 1
+R7
+R15
+R9
+vtb
+R18
+!i10b 1
+!s100 Zf5N`a`lg6[jOZ;?^V4O<3
+R2
+IJ?1AmJ6AG:mN51FI_Rci:2
+R3
+R0
+w1737013606
+8E:/e_yantra/task 2/eb_3699_task2b/t1c_riscv_cpu/.test/tb.v
+FE:/e_yantra/task 2/eb_3699_task2b/t1c_riscv_cpu/.test/tb.v
+!i122 15
+L0 3 96
+R5
+r1
+!s85 0
+31
+!s108 1740921395.000000
+!s107 E:/e_yantra/task 2/eb_3699_task2b/t1c_riscv_cpu/.test/tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/e_yantra/task 2/eb_3699_task2b/t1c_riscv_cpu/.test|E:/e_yantra/task 2/eb_3699_task2b/t1c_riscv_cpu/.test/tb.v|
+!i113 1
+R7
+!s92 -vlog01compat -work work {+incdir+E:/e_yantra/task 2/eb_3699_task2b/t1c_riscv_cpu/.test}
+R9

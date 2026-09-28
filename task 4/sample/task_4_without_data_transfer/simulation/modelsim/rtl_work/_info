@@ -1,0 +1,133 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/e_yantra/task_4/day_time/line_following_sample/simulation/modelsim
+vADC_Controller
+Z1 !s110 1735022122
+!i10b 1
+!s100 bYgc4nbCEef^IfL4B;Lni2
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IOk0X_QC<@<<_Hl>cY<h6z0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1734950551
+8E:/e_yantra/task_4/day_time/line_following_sample/code/ADC_controller.v
+FE:/e_yantra/task_4/day_time/line_following_sample/code/ADC_controller.v
+!i122 3
+L0 20 71
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1735022122.000000
+!s107 E:/e_yantra/task_4/day_time/line_following_sample/code/ADC_controller.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/e_yantra/task_4/day_time/line_following_sample/code|E:/e_yantra/task_4/day_time/line_following_sample/code/ADC_controller.v|
+!i113 1
+Z6 o-vlog01compat -work work
+Z7 !s92 -vlog01compat -work work +incdir+E:/e_yantra/task_4/day_time/line_following_sample/code
+Z8 tCvgOpt 0
+n@a@d@c_@controller
+vfrequency_scaler
+Z9 !s110 1735022121
+!i10b 1
+!s100 l]bU=oNgkT8D5_IW5[NY70
+R2
+IB9M4_<@dSY=07RKbP1R7:3
+R3
+R0
+w1728578784
+8E:/e_yantra/task_4/day_time/line_following_sample/code/frequency_scaler.v
+FE:/e_yantra/task_4/day_time/line_following_sample/code/frequency_scaler.v
+!i122 1
+L0 20 28
+R4
+r1
+!s85 0
+31
+Z10 !s108 1735022121.000000
+!s107 E:/e_yantra/task_4/day_time/line_following_sample/code/frequency_scaler.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/e_yantra/task_4/day_time/line_following_sample/code|E:/e_yantra/task_4/day_time/line_following_sample/code/frequency_scaler.v|
+!i113 1
+R6
+R7
+R8
+vFrequency_Scaling
+R1
+!i10b 1
+!s100 JkH36i201ozBWLfEV12;b2
+R2
+I8CC``m38C5]D79^9Y;Mch1
+R3
+R0
+w1733325433
+8E:/e_yantra/task_4/day_time/line_following_sample/code/Frequency_Scaling.v
+FE:/e_yantra/task_4/day_time/line_following_sample/code/Frequency_Scaling.v
+!i122 2
+L0 14 15
+R4
+r1
+!s85 0
+31
+R10
+!s107 E:/e_yantra/task_4/day_time/line_following_sample/code/Frequency_Scaling.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/e_yantra/task_4/day_time/line_following_sample/code|E:/e_yantra/task_4/day_time/line_following_sample/code/Frequency_Scaling.v|
+!i113 1
+R6
+R7
+R8
+n@frequency_@scaling
+vmotor_driver
+R1
+!i10b 1
+!s100 Jg=?doVdT`h;lS@AWdD=Y0
+R2
+ILkORzkg:9_T3n>@mRDIO02
+R3
+R0
+w1735022052
+8E:/e_yantra/task_4/day_time/line_following_sample/code/motor_driver.v
+FE:/e_yantra/task_4/day_time/line_following_sample/code/motor_driver.v
+!i122 4
+L0 1 121
+R4
+r1
+!s85 0
+31
+R5
+!s107 E:/e_yantra/task_4/day_time/line_following_sample/code/motor_driver.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/e_yantra/task_4/day_time/line_following_sample/code|E:/e_yantra/task_4/day_time/line_following_sample/code/motor_driver.v|
+!i113 1
+R6
+R7
+R8
+vpwm_generator
+R9
+!i10b 1
+!s100 9clOYCV@oLc2dRUPMXl@C0
+R2
+IULb]Hn=W2]lTl;z9zdc9:3
+R3
+R0
+w1734087868
+8E:/e_yantra/task_4/day_time/line_following_sample/code/pwm_generator.v
+FE:/e_yantra/task_4/day_time/line_following_sample/code/pwm_generator.v
+!i122 0
+L0 19 35
+R4
+r1
+!s85 0
+31
+R10
+!s107 E:/e_yantra/task_4/day_time/line_following_sample/code/pwm_generator.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/e_yantra/task_4/day_time/line_following_sample/code|E:/e_yantra/task_4/day_time/line_following_sample/code/pwm_generator.v|
+!i113 1
+R6
+R7
+R8

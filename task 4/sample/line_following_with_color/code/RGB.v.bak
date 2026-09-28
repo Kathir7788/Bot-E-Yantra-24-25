@@ -1,0 +1,20 @@
+module rgb(
+	input [1:0] color,
+	output  blue,red,green
+);
+
+always @(*) begin
+	case(color)
+		2'b1:begin
+			red = 1; green = 0; blue = 0; 
+		end
+		2'b10:begin
+			red = 0; green = 1; blue = 0; 
+		end
+		2'b11:begin
+		
+		end
+	endcase
+end
+
+endmodule 

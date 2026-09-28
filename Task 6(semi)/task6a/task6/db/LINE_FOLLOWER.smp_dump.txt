@@ -1,0 +1,66 @@
+
+State Machine - |LINE_FOLLOWER|t1b_cd_fd:inst11|filter_cs_out
+Name filter_cs_out.11 filter_cs_out.10 filter_cs_out.01 filter_cs_out.00 
+filter_cs_out.00 0 0 0 0 
+filter_cs_out.01 0 0 1 1 
+filter_cs_out.10 0 1 0 1 
+filter_cs_out.11 1 0 0 1 
+
+State Machine - |LINE_FOLLOWER|uart_tx:inst12|state
+Name state.ENDBIT state.PARITYBIT state.DATABIT state.00 
+state.00 0 0 0 0 
+state.DATABIT 0 0 1 1 
+state.PARITYBIT 0 1 0 1 
+state.ENDBIT 1 0 0 1 
+
+State Machine - |LINE_FOLLOWER|uart_rx:inst13|state
+Name state.ENDBIT state.PARITYBIT state.DATABIT state.STARTBIT 
+state.STARTBIT 0 0 0 0 
+state.DATABIT 0 0 1 1 
+state.PARITYBIT 0 1 0 1 
+state.ENDBIT 1 0 0 1 
+
+State Machine - |LINE_FOLLOWER|main_controller:inst6|csl_run
+Name csl_run.11 csl_run.10 csl_run.01 csl_run.00 
+csl_run.00 0 0 0 0 
+csl_run.01 0 0 1 1 
+csl_run.10 0 1 0 1 
+csl_run.11 1 0 0 1 
+
+State Machine - |LINE_FOLLOWER|main_controller:inst6|en_print
+Name en_print.110 en_print.101 en_print.100 en_print.011 en_print.001 en_print.000 
+en_print.000 0 0 0 0 0 0 
+en_print.001 0 0 0 0 1 1 
+en_print.011 0 0 0 1 0 1 
+en_print.100 0 0 1 0 0 1 
+en_print.101 0 1 0 0 0 1 
+en_print.110 1 0 0 0 0 1 
+
+State Machine - |LINE_FOLLOWER|main_controller:inst6|en
+Name en.000 en.010 en.001 
+en.000 0 0 0 
+en.001 1 0 1 
+en.010 1 1 0 
+
+State Machine - |LINE_FOLLOWER|motor_driver:inst3|en_pick
+Name en_pick.001 
+en_pick.000 0 
+en_pick.001 1 
+
+State Machine - |LINE_FOLLOWER|motor_driver:inst3|state
+Name state.BIT_FRONT state.OBSTACLE_with_load state.END state.OBSTACLE_without_load state.UTURN state.UTURN_CLK state.NODE state.UTURN_ACLK state.DOTTED_LINE_10_11 state.LEFT_TURN state.START state.DOTTED_LINE_11_10 state.RIGHT_TURN state.FORWARD state.INITIAL 
+state.INITIAL 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.FORWARD 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.RIGHT_TURN 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.DOTTED_LINE_11_10 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.START 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.LEFT_TURN 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.DOTTED_LINE_10_11 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.UTURN_ACLK 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.NODE 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.UTURN_CLK 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.UTURN 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.OBSTACLE_without_load 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.END 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+state.OBSTACLE_with_load 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.BIT_FRONT 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 

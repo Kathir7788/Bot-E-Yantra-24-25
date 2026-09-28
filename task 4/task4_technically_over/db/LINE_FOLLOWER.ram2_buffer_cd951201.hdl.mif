@@ -1,0 +1,17 @@
+-- begin_signature
+-- buffer
+-- end_signature
+WIDTH=8;
+DEPTH=6;
+
+ADDRESS_RADIX=UNS;
+DATA_RADIX=BIN;
+
+CONTENT BEGIN
+	5 :	11001010;
+	4 :	10010010;
+	3 :	11001010;
+	2 :	10000010;
+	1 :	10110010;
+	0 :	10010010;
+END;

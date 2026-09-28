@@ -1,0 +1,8 @@
+{
+    "CSL_SUBS": [1, "PSU2.MU2", "PSU3.SU1"],
+    "CSL_MSGS": ["CSL-PU-#"],
+    "SLM_MSGS": ["SLM-PSU1-AS-#", "SLM-PSU2-IM-#", "SLM-PSU3-IS-#"],
+    "RPM_MSGS": ["RPM-PSU2-#", "RPM-SU1-#"],
+    "RDM_MSGS": ["RDM-MU2-#", "RDM-PSU3-#"],
+    "OBSTACLE": []
+}

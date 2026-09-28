@@ -1,0 +1,126 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/e_yantra/2.RIPPLE_CARRY_ADDER/simulation/qsim
+vfull_adder
+Z1 !s110 1725115869
+!i10b 1
+!s100 LPWjg0EOBVeN@jgoPnGG02
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I<_6Xkob8W9I>Xho>HdmZ?0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z4 w1725115867
+Z5 8ripple_carry_adder.vo
+Z6 Fripple_carry_adder.vo
+!i122 4
+L0 32 120
+Z7 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1725115868.000000
+Z8 !s107 ripple_carry_adder.vo|
+Z9 !s90 -work|work|ripple_carry_adder.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+vfull_adder_vlg_vec_tst
+R1
+!i10b 1
+!s100 LNAY[W8zahi<P38Oz45kk1
+R2
+IM24h6`aMdeI1Xe<:f=lK73
+R3
+R0
+R4
+Z12 8Waveform.vwf.vt
+Z13 FWaveform.vwf.vt
+!i122 5
+L0 30 52
+R7
+r1
+!s85 0
+31
+!s108 1725115869.000000
+!s107 Waveform.vwf.vt|
+Z14 !s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R10
+R11
+vhard_block
+Z15 !s110 1726460182
+!i10b 1
+!s100 6Dgjn?^ia@_WY4ejIKXT82
+R2
+IjSV;PM<K1X@T<ASQma[7F3
+R3
+Z16 dE:/e_yantra/eb_3699_task0/ripple_carry_adder/simulation/qsim
+Z17 w1725262942
+R5
+R6
+!i122 16
+L0 250 34
+R7
+r1
+!s85 0
+31
+Z18 !s108 1726460182.000000
+R8
+R9
+!i113 1
+R10
+R11
+vripple_carry_adder
+R15
+!i10b 1
+!s100 QA0c_V<]PH3ce5QTZF]6j3
+R2
+IhMMiH2IaAJ_dzjSRdYEhn3
+R3
+R16
+R17
+R5
+R6
+!i122 16
+L0 32 217
+R7
+r1
+!s85 0
+31
+R18
+R8
+R9
+!i113 1
+R10
+R11
+vripple_carry_adder_vlg_vec_tst
+R15
+!i10b 1
+!s100 `@BSfDIj8FWi4>K]2Wez_3
+R2
+Id5`deDFGm:C8dzW92h`0D3
+R3
+R16
+w1726460180
+R12
+R13
+!i122 17
+L0 30 68
+R7
+r1
+!s85 0
+31
+R18
+Z19 !s107 Waveform.vwf.vt|
+R14
+!i113 1
+R10
+R11

@@ -1,0 +1,4 @@
+module code(
+	input 
+	output s0,s1,s2,s3,OE
+)

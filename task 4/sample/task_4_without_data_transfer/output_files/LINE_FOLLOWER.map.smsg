@@ -1,0 +1,4 @@
+Warning (10268): Verilog HDL information at t1b_cd_fd.v(51): always construct contains both blocking and non-blocking assignments File: E:/e_yantra/task_4/sample/task_4_without_data_transfer/code/t1b_cd_fd.v Line: 51
+Warning (10268): Verilog HDL information at uart_rx.v(54): always construct contains both blocking and non-blocking assignments File: E:/e_yantra/task_4/sample/task_4_without_data_transfer/code/uart_rx.v Line: 54
+Warning (10268): Verilog HDL information at buffer.v(27): always construct contains both blocking and non-blocking assignments File: E:/e_yantra/task_4/sample/task_4_without_data_transfer/code/buffer.v Line: 27
+Info (10281): Verilog HDL Declaration information at buffer.v(6): object "node" differs only in case from object "NODE" in the same scope File: E:/e_yantra/task_4/sample/task_4_without_data_transfer/code/buffer.v Line: 6

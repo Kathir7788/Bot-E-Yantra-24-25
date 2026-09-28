@@ -1,0 +1,107 @@
+|UART
+tx <= uart_tx:inst3.tx
+clk_50M => Frequency_Scaling:inst1.clk_50M
+rx => uart_rx:inst.rx
+
+
+|UART|uart_tx:inst3
+clk_3125 => count[0].CLK
+clk_3125 => count[1].CLK
+clk_3125 => count[2].CLK
+clk_3125 => count[3].CLK
+clk_3125 => tx~reg0.CLK
+clk_3125 => clk_per_bit[0].CLK
+clk_3125 => clk_per_bit[1].CLK
+clk_3125 => clk_per_bit[2].CLK
+clk_3125 => clk_per_bit[3].CLK
+clk_3125 => clk_per_bit[4].CLK
+clk_3125 => clk_per_bit[5].CLK
+clk_3125 => tx_done~reg0.CLK
+clk_3125 => state~5.DATAIN
+tx_start => clk_per_bit.OUTPUTSELECT
+tx_start => clk_per_bit.OUTPUTSELECT
+tx_start => clk_per_bit.OUTPUTSELECT
+tx_start => clk_per_bit.OUTPUTSELECT
+tx_start => clk_per_bit.OUTPUTSELECT
+tx_start => clk_per_bit.OUTPUTSELECT
+tx_start => tx.OUTPUTSELECT
+data[0] => WideXor0.IN0
+data[0] => Mux0.IN3
+data[1] => WideXor0.IN1
+data[1] => Mux0.IN4
+data[2] => WideXor0.IN2
+data[2] => Mux0.IN5
+data[3] => WideXor0.IN3
+data[3] => Mux0.IN6
+data[4] => WideXor0.IN4
+data[4] => Mux0.IN7
+data[5] => WideXor0.IN5
+data[5] => Mux0.IN8
+data[6] => WideXor0.IN6
+data[6] => Mux0.IN9
+data[7] => WideXor0.IN7
+data[7] => Mux0.IN10
+tx <= tx~reg0.DB_MAX_OUTPUT_PORT_TYPE
+tx_done <= tx_done~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|UART|Frequency_Scaling:inst1
+clk_50M => s_clk_counter[0].CLK
+clk_50M => s_clk_counter[1].CLK
+clk_50M => s_clk_counter[2].CLK
+clk_50M => adc_clk_out~reg0.CLK
+adc_clk_out <= adc_clk_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|UART|uart_rx:inst
+clk_3125 => rx_msg[0]~reg0.CLK
+clk_3125 => rx_msg[1]~reg0.CLK
+clk_3125 => rx_msg[2]~reg0.CLK
+clk_3125 => rx_msg[3]~reg0.CLK
+clk_3125 => rx_msg[4]~reg0.CLK
+clk_3125 => rx_msg[5]~reg0.CLK
+clk_3125 => rx_msg[6]~reg0.CLK
+clk_3125 => rx_msg[7]~reg0.CLK
+clk_3125 => rx_parity~reg0.CLK
+clk_3125 => temp_rx_parity.CLK
+clk_3125 => rx_parity_temp.CLK
+clk_3125 => temp_rx_msg[0].CLK
+clk_3125 => temp_rx_msg[1].CLK
+clk_3125 => temp_rx_msg[2].CLK
+clk_3125 => temp_rx_msg[3].CLK
+clk_3125 => temp_rx_msg[4].CLK
+clk_3125 => temp_rx_msg[5].CLK
+clk_3125 => temp_rx_msg[6].CLK
+clk_3125 => temp_rx_msg[7].CLK
+clk_3125 => count[0].CLK
+clk_3125 => count[1].CLK
+clk_3125 => count[2].CLK
+clk_3125 => count[3].CLK
+clk_3125 => clk_per_bit[0].CLK
+clk_3125 => clk_per_bit[1].CLK
+clk_3125 => clk_per_bit[2].CLK
+clk_3125 => clk_per_bit[3].CLK
+clk_3125 => clk_per_bit[4].CLK
+clk_3125 => clk_per_bit[5].CLK
+clk_3125 => rx_complete~reg0.CLK
+clk_3125 => state~5.DATAIN
+rx => ShiftLeft0.IN40
+rx => rx_parity_temp.DATAB
+rx => clk_per_bit.OUTPUTSELECT
+rx => clk_per_bit.OUTPUTSELECT
+rx => clk_per_bit.OUTPUTSELECT
+rx => clk_per_bit.OUTPUTSELECT
+rx => clk_per_bit.OUTPUTSELECT
+rx => clk_per_bit.OUTPUTSELECT
+rx_msg[0] <= rx_msg[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+rx_msg[1] <= rx_msg[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+rx_msg[2] <= rx_msg[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+rx_msg[3] <= rx_msg[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+rx_msg[4] <= rx_msg[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+rx_msg[5] <= rx_msg[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+rx_msg[6] <= rx_msg[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+rx_msg[7] <= rx_msg[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+rx_parity <= rx_parity~reg0.DB_MAX_OUTPUT_PORT_TYPE
+rx_complete <= rx_complete~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

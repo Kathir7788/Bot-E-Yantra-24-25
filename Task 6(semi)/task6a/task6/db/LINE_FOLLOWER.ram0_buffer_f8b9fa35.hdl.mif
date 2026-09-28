@@ -1,0 +1,22 @@
+-- begin_signature
+-- buffer(CLK_FREQ
+-- 3125000
+-- PWM_FREQ
+-- 50
+-- MIN_TON
+-- 1
+-- MAX_TON
+-- 12)
+-- end_signature
+WIDTH=8;
+DEPTH=4;
+
+ADDRESS_RADIX=UNS;
+DATA_RADIX=BIN;
+
+CONTENT BEGIN
+	3 :	XXXXXXXX;
+	2 :	01001101;
+	1 :	01001100;
+	0 :	01010011;
+END;

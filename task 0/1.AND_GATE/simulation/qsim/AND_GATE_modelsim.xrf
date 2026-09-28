@@ -1,0 +1,9 @@
+vendor_name = ModelSim
+source_file = 1, E:/e_yantra/1.AND_GATE/AND_GATE.v
+source_file = 1, E:/e_yantra/1.AND_GATE/and_gate_test_bench.v
+source_file = 1, E:/e_yantra/1.AND_GATE/db/AND_GATE.cbx.xml
+design_name = AND_GATE
+instance = comp, \out~output , out~output, AND_GATE, 1
+instance = comp, \a~input , a~input, AND_GATE, 1
+instance = comp, \b~input , b~input, AND_GATE, 1
+instance = comp, \out~0 , out~0, AND_GATE, 1

@@ -1,0 +1,44 @@
+|uart_tx
+clk_3125 => parity.CLK
+clk_3125 => place[0].CLK
+clk_3125 => place[1].CLK
+clk_3125 => place[2].CLK
+clk_3125 => place[3].CLK
+clk_3125 => tx~reg0.CLK
+clk_3125 => tx_done~reg0.CLK
+clk_3125 => clk_per_bit[0].CLK
+clk_3125 => clk_per_bit[1].CLK
+clk_3125 => clk_per_bit[2].CLK
+clk_3125 => clk_per_bit[3].CLK
+parity_type => ~NO_FANOUT~
+tx_start => clk_per_bit.OUTPUTSELECT
+tx_start => clk_per_bit.OUTPUTSELECT
+tx_start => clk_per_bit.OUTPUTSELECT
+tx_start => clk_per_bit.OUTPUTSELECT
+tx_start => tx.OUTPUTSELECT
+tx_start => place.OUTPUTSELECT
+tx_start => place.OUTPUTSELECT
+tx_start => place.OUTPUTSELECT
+tx_start => place.OUTPUTSELECT
+tx_start => tx_done~reg0.ENA
+tx_start => parity.ENA
+data[0] => Mux0.IN10
+data[0] => parity.IN0
+data[1] => Mux0.IN9
+data[1] => parity.IN1
+data[2] => Mux0.IN8
+data[2] => parity.IN1
+data[3] => Mux0.IN7
+data[3] => parity.IN1
+data[4] => Mux0.IN6
+data[4] => parity.IN1
+data[5] => Mux0.IN5
+data[5] => parity.IN1
+data[6] => Mux0.IN4
+data[6] => parity.IN1
+data[7] => Mux0.IN3
+data[7] => parity.IN1
+tx <= tx~reg0.DB_MAX_OUTPUT_PORT_TYPE
+tx_done <= tx_done~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at tb.v(63): always construct contains both blocking and non-blocking assignments File: E:/e_yantra/task 1/eb_3699_task1a/t1a_fs_pwm/.test/tb.v Line: 63

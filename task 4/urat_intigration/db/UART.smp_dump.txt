@@ -1,0 +1,14 @@
+
+State Machine - |UART|uart_rx:inst|state
+Name state.ENDBIT state.PARITYBIT state.DATABIT state.STARTBIT 
+state.STARTBIT 0 0 0 0 
+state.DATABIT 0 0 1 1 
+state.PARITYBIT 0 1 0 1 
+state.ENDBIT 1 0 0 1 
+
+State Machine - |UART|uart_tx:inst3|state
+Name state.ENDBIT state.PARITYBIT state.DATABIT state.00 
+state.00 0 0 0 0 
+state.DATABIT 0 0 1 1 
+state.PARITYBIT 0 1 0 1 
+state.ENDBIT 1 0 0 1 

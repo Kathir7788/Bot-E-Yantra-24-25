@@ -1,0 +1,63 @@
+# Reading pref.tcl
+# do LINE_FOLLOWER_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+E:/e_yantra/task_4/day_time/line_following_sample/code {E:/e_yantra/task_4/day_time/line_following_sample/code/pwm_generator.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:05:21 on Dec 24,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/e_yantra/task_4/day_time/line_following_sample/code" E:/e_yantra/task_4/day_time/line_following_sample/code/pwm_generator.v 
+# -- Compiling module pwm_generator
+# 
+# Top level modules:
+# 	pwm_generator
+# End time: 12:05:21 on Dec 24,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+E:/e_yantra/task_4/day_time/line_following_sample/code {E:/e_yantra/task_4/day_time/line_following_sample/code/frequency_scaler.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:05:21 on Dec 24,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/e_yantra/task_4/day_time/line_following_sample/code" E:/e_yantra/task_4/day_time/line_following_sample/code/frequency_scaler.v 
+# -- Compiling module frequency_scaler
+# 
+# Top level modules:
+# 	frequency_scaler
+# End time: 12:05:21 on Dec 24,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+E:/e_yantra/task_4/day_time/line_following_sample/code {E:/e_yantra/task_4/day_time/line_following_sample/code/Frequency_Scaling.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:05:21 on Dec 24,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/e_yantra/task_4/day_time/line_following_sample/code" E:/e_yantra/task_4/day_time/line_following_sample/code/Frequency_Scaling.v 
+# -- Compiling module Frequency_Scaling
+# 
+# Top level modules:
+# 	Frequency_Scaling
+# End time: 12:05:22 on Dec 24,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+E:/e_yantra/task_4/day_time/line_following_sample/code {E:/e_yantra/task_4/day_time/line_following_sample/code/ADC_controller.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:05:22 on Dec 24,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/e_yantra/task_4/day_time/line_following_sample/code" E:/e_yantra/task_4/day_time/line_following_sample/code/ADC_controller.v 
+# -- Compiling module ADC_Controller
+# 
+# Top level modules:
+# 	ADC_Controller
+# End time: 12:05:22 on Dec 24,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+E:/e_yantra/task_4/day_time/line_following_sample/code {E:/e_yantra/task_4/day_time/line_following_sample/code/motor_driver.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:05:22 on Dec 24,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/e_yantra/task_4/day_time/line_following_sample/code" E:/e_yantra/task_4/day_time/line_following_sample/code/motor_driver.v 
+# -- Compiling module motor_driver
+# 
+# Top level modules:
+# 	motor_driver
+# End time: 12:05:22 on Dec 24,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 

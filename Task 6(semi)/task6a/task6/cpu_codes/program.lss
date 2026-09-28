@@ -1,0 +1,435 @@
+
+.temp.file.elf:     file format elf32-littleriscv
+
+SYMBOL TABLE:
+00000000 l    d  .init	00000000 .init
+00000054 l    d  .text	00000000 .text
+02000000 l    d  .data	00000000 .data
+02000000 l    d  .bss	00000000 .bss
+02000000 l    d  .stack	00000000 .stack
+00000000 l    d  .riscv.attributes	00000000 .riscv.attributes
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .debug_aranges	00000000 .debug_aranges
+00000000 l    d  .debug_info	00000000 .debug_info
+00000000 l    d  .debug_abbrev	00000000 .debug_abbrev
+00000000 l    d  .debug_line	00000000 .debug_line
+00000000 l    d  .debug_str	00000000 .debug_str
+00000000 l    d  .debug_loc	00000000 .debug_loc
+00000000 l    d  .debug_ranges	00000000 .debug_ranges
+00000000 l    d  .debug_frame	00000000 .debug_frame
+00000000 l    d  .debug_macro	00000000 .debug_macro
+00000000 l    df *ABS*	00000000 tls.c
+00000000 l    df *ABS*	00000000 
+0000017e l       .debug_info	00000000 
+0000017e l       .debug_info	00000000 
+0000017e l       .debug_info	00000000 
+0000017e l       .debug_info	00000000 
+0000017e l       .debug_info	00000000 
+0000017e l       .debug_info	00000000 
+0000017e l       .debug_info	00000000 
+0000017e l       .debug_info	00000000 
+0000017e l       .debug_info	00000000 
+0000017e l       .debug_info	00000000 
+0000017e l       .debug_info	00000000 
+0000017e l       .debug_info	00000000 
+0000017e l       .debug_info	00000000 
+0000017e l       .debug_info	00000000 
+0000017e l       .debug_info	00000000 
+0000017e l       .debug_info	00000000 
+0000017e l       .debug_info	00000000 
+0000017e l       .debug_info	00000000 
+0000017e l       .debug_info	00000000 
+0000017e l       .debug_info	00000000 
+00000000 g       *ABS*	00000000 __data_size
+02000800 g       .data	00000000 __global_pointer$
+02000000 g       .bss	00000000 __tls_base
+00000400 g       *ABS*	00000000 __flash_size
+00000008 g       *ABS*	00000000 __stack_size
+00000000 g       *ABS*	00000000 __bss_size
+00000330 g     F .text	00000024 memcpy
+02000000 g       .bss	00000000 __bss_end
+00000000 g       *ABS*	00000000 __tbss_size
+00000328 g     F .text	00000008 _set_tls
+00000000 g     F .init	00000000 _start
+02000000 g       *ABS*	00000000 __ram
+02000000 g       .bss	00000000 __data_end
+00000370 g       .text	00000000 __text_end
+02000000 g       .bss	00000000 __bss_start
+00000354 g     F .text	0000001c memset
+00000054 g     F .text	000002d4 main
+0000017e  w      .debug_info	00000000 .hidden path_planner.c.9c188d97
+00000040 g       *ABS*	00000000 __ram_size
+02000040 g       .init	00000000 __stack
+00000000 g     F *ABS*	00000000 vfscanf
+00000370 g       *ABS*	00000000 __data_source
+00000000 g       *ABS*	00000000 __flash
+02000000 g       .data	00000000 __data_start
+00000000 g     F *ABS*	00000000 vfprintf
+
+
+
+Disassembly of section .init:
+
+00000000 <_start>:
+   0:	    02000117          	auipc	x2,0x2000
+   4:	    04010113          	addi	x2,x2,64 # 2000040 <__stack>
+   8:	    02000197          	auipc	x3,0x2000
+   c:	    7f818193          	addi	x3,x3,2040 # 2000800 <__global_pointer$>
+  10:	    02000517          	auipc	x10,0x2000
+  14:	    ff050513          	addi	x10,x10,-16 # 2000000 <__bss_end>
+  18:	    37000593          	addi	x11,x0,880
+  1c:	    00000613          	addi	x12,x0,0
+  20:	    310000ef          	jal	x1,330 <memcpy>
+  24:	    02000517          	auipc	x10,0x2000
+  28:	    fdc50513          	addi	x10,x10,-36 # 2000000 <__bss_end>
+  2c:	    00000593          	addi	x11,x0,0
+  30:	    00000613          	addi	x12,x0,0
+  34:	    320000ef          	jal	x1,354 <memset>
+  38:	    02000517          	auipc	x10,0x2000
+  3c:	    fc850513          	addi	x10,x10,-56 # 2000000 <__bss_end>
+  40:	    2e8000ef          	jal	x1,328 <_set_tls>
+  44:	    00000513          	addi	x10,x0,0
+  48:	    00000593          	addi	x11,x0,0
+  4c:	    008000ef          	jal	x1,54 <main>
+  50:	/-- 0000006f          	jal	x0,50 <__ram_size+0x10>
+
+Disassembly of section .text:
+
+00000054 <main>:
+     ###     #else
+     ###         uint32_t *graph = (uint32_t *) 0x02000010;
+     ###     #endif
+     ### 	
+     ###     // Encoding the graph with neighbors for each node
+     ### 	graph[0] = (10 << 12) | (6 << 6) | 1;    // Node 0 connects to 10, 6, 1
+  54:	                   0000a737          	lui	x14,0xa
+  58:	                   020007b7          	lui	x15,0x2000
+  5c:	                   18170713          	addi	x14,x14,385 # a181 <__flash_size+0x9d81>
+  60:	                   00e7a823          	sw	x14,16(x15) # 2000010 <__bss_end+0x10>
+     ### 	graph[1] = (11 << 12) | (2 << 6) | 32;     // Node 1 connects to 2, 5, 7
+  64:	                   0000b737          	lui	x14,0xb
+  68:	                   0a070713          	addi	x14,x14,160 # b0a0 <__flash_size+0xaca0>
+  6c:	                   00e7aa23          	sw	x14,20(x15)
+     ### 	graph[2] = (5 << 18) | (4 << 12) | (3 << 6) | 1;  // Node 2 connects to 3, 4, 5
+  70:	                   00144737          	lui	x14,0x144
+  74:	                   0c170713          	addi	x14,x14,193 # 1440c1 <__flash_size+0x143cc1>
+  78:	                   00e7ac23          	sw	x14,24(x15)
+     ### 	graph[3] = (2 << 6);                    // Node 3 connects to 2
+  7c:	                   08000713          	addi	x14,x0,128
+  80:	                   00e7ae23          	sw	x14,28(x15)
+     ### 	graph[4] = (2 << 6);                    // Node 4 connects to 2
+  84:	                   02e7a023          	sw	x14,32(x15)
+     ### 	graph[5] = (2 << 6);                    // Node 5 connects to 2
+  88:	                   02e7a223          	sw	x14,36(x15)
+     ### 	graph[6] = (9 << 18) | (8 << 12) | (7 << 6) | 32;  // Node 6 connects to 7, 8, 9
+  8c:	                   00248737          	lui	x14,0x248
+  90:	                   1e070713          	addi	x14,x14,480 # 2481e0 <__flash_size+0x247de0>
+  94:	                   02e7a423          	sw	x14,40(x15)
+     ### 	graph[7] = (6 << 6);                    // Node 7 connects to 6
+  98:	                   18000713          	addi	x14,x0,384
+  9c:	                   02e7a623          	sw	x14,44(x15)
+     ### 	graph[8] = (6 << 6);                    // Node 8 connects to 6
+  a0:	                   02e7a823          	sw	x14,48(x15)
+     ### 	graph[9] = (6 << 6);                    // Node 9 connects to 6
+  a4:	                   02e7aa23          	sw	x14,52(x15)
+     ### 	graph[10] = (26 << 18) | (24 << 12) | (11 << 6) | 32;  // Node 10 connects to 26, 24, 11
+  a8:	                   00698737          	lui	x14,0x698
+  ac:	                   2e070713          	addi	x14,x14,736 # 6982e0 <__flash_size+0x697ee0>
+  b0:	                   02e7ac23          	sw	x14,56(x15)
+     ### 	graph[11] = (19 << 18) | (12 << 12) | (10 << 6) | 1;   // Node 11 connects to 19, 12, 10
+  b4:	                   004cc737          	lui	x14,0x4cc
+  b8:	                   28170713          	addi	x14,x14,641 # 4cc281 <__flash_size+0x4cbe81>
+  bc:	                   02e7ae23          	sw	x14,60(x15)
+     ### 	graph[12] = (14 << 12) | (13 << 6) | 11;  // Node 12 connects to 14, 13, 11
+  c0:	                   0000e737          	lui	x14,0xe
+  c4:	                   34b70713          	addi	x14,x14,843 # e34b <__flash_size+0xdf4b>
+  c8:	                   04e7a023          	sw	x14,64(x15)
+     ### 	graph[13] = (12 << 6);                  // Node 13 connects to 12
+  cc:	                   30000713          	addi	x14,x0,768
+  d0:	                   04e7a223          	sw	x14,68(x15)
+     ### 	graph[14] = (16 << 12) | (15 << 6) | 12; // Node 14 connects to 16, 15, 12
+  d4:	                   00010737          	lui	x14,0x10
+  d8:	                   3cc70713          	addi	x14,x14,972 # 103cc <__flash_size+0xffcc>
+  dc:	                   04e7a423          	sw	x14,72(x15)
+     ### 	graph[15] = (14 << 6);                  // Node 15 connects to 14
+  e0:	                   38000713          	addi	x14,x0,896
+  e4:	                   04e7a623          	sw	x14,76(x15)
+     ### 	graph[16] = (18 << 12) | (17 << 6) | 14; // Node 16 connects to 18, 17, 14
+  e8:	                   00012737          	lui	x14,0x12
+  ec:	                   44e70713          	addi	x14,x14,1102 # 1244e <__flash_size+0x1204e>
+  f0:	                   04e7a823          	sw	x14,80(x15)
+     ### 	graph[17] = (16 << 6);                  // Node 17 connects to 16
+  f4:	                   40000713          	addi	x14,x0,1024
+  f8:	                   04e7aa23          	sw	x14,84(x15)
+     ### 	graph[18] = (21 << 12) | (19 << 6) | 16; // Node 18 connects to 21, 19, 16
+  fc:	                   00015737          	lui	x14,0x15
+ 100:	                   4d070713          	addi	x14,x14,1232 # 154d0 <__flash_size+0x150d0>
+ 104:	                   04e7ac23          	sw	x14,88(x15)
+     ### 	graph[19] = (20 << 12) | (18 << 6) | 11; // Node 19 connects to 20, 18, 11
+ 108:	                   00014737          	lui	x14,0x14
+ 10c:	                   48b70713          	addi	x14,x14,1163 # 1448b <__flash_size+0x1408b>
+ 110:	                   04e7ae23          	sw	x14,92(x15)
+     ### 	graph[20] = (19 << 6);                  // Node 20 connects to 19
+ 114:	                   4c000713          	addi	x14,x0,1216
+ 118:	                   06e7a023          	sw	x14,96(x15)
+     ### 	graph[21] = (23 << 12) | (22 << 6) | 18; // Node 21 connects to 23, 22, 18
+ 11c:	                   00017737          	lui	x14,0x17
+ 120:	                   59270713          	addi	x14,x14,1426 # 17592 <__flash_size+0x17192>
+ 124:	                   06e7a223          	sw	x14,100(x15)
+     ### 	graph[22] = (21 << 6);                  // Node 22 connects to 21
+ 128:	                   54000713          	addi	x14,x0,1344
+ 12c:	                   06e7a423          	sw	x14,104(x15)
+     ### 	graph[23] = (30 << 12) | (24 << 6) | 21; // Node 23 connects to 30, 24, 21
+ 130:	                   0001e737          	lui	x14,0x1e
+ 134:	                   61570693          	addi	x13,x14,1557 # 1e615 <__flash_size+0x1e215>
+ 138:	                   06d7a623          	sw	x13,108(x15)
+     ### 	graph[24] = (25 << 12) | (23 << 6) | 10; // Node 24 connects to 25, 23, 10
+     ### 	graph[25] = (24 << 6);                  // Node 25 connects to 24
+     ### 	graph[26] = (28 << 12) | (27 << 6) | 10; // Node 26 connects to 28, 27, 10
+     ### 	graph[27] = (26 << 6);                  // Node 27 connects to 26
+     ### 	graph[28] = (30 << 12) | (29 << 6) | 26; // Node 28 connects to 30, 29, 26
+ 13c:	                   75a70713          	addi	x14,x14,1882
+     ### 	graph[24] = (25 << 12) | (23 << 6) | 10; // Node 24 connects to 25, 23, 10
+ 140:	                   000196b7          	lui	x13,0x19
+ 144:	                   5ca68693          	addi	x13,x13,1482 # 195ca <__flash_size+0x191ca>
+     ### 	graph[28] = (30 << 12) | (29 << 6) | 26; // Node 28 connects to 30, 29, 26
+ 148:	                   08e7a023          	sw	x14,128(x15)
+     ### 	graph[29] = (28 << 6);                  // Node 29 connects to 28
+ 14c:	                   70000713          	addi	x14,x0,1792
+     ### 	graph[24] = (25 << 12) | (23 << 6) | 10; // Node 24 connects to 25, 23, 10
+ 150:	                   06d7a823          	sw	x13,112(x15)
+     ### 	graph[29] = (28 << 6);                  // Node 29 connects to 28
+ 154:	                   08e7a223          	sw	x14,132(x15)
+     ### 	graph[25] = (24 << 6);                  // Node 25 connects to 24
+ 158:	                   60000693          	addi	x13,x0,1536
+     ### 	graph[30] = (31 << 12) | (28 << 6) | 23; // Node 30 connects to 31, 28, 23
+ 15c:	                   0001f737          	lui	x14,0x1f
+     ### 	graph[25] = (24 << 6);                  // Node 25 connects to 24
+ 160:	                   06d7aa23          	sw	x13,116(x15)
+     ### 	graph[30] = (31 << 12) | (28 << 6) | 23; // Node 30 connects to 31, 28, 23
+ 164:	                   71770713          	addi	x14,x14,1815 # 1f717 <__flash_size+0x1f317>
+     ### 	graph[26] = (28 << 12) | (27 << 6) | 10; // Node 26 connects to 28, 27, 10
+ 168:	                   0001c6b7          	lui	x13,0x1c
+ 16c:	                   6ca68693          	addi	x13,x13,1738 # 1c6ca <__flash_size+0x1c2ca>
+     ### 	graph[30] = (31 << 12) | (28 << 6) | 23; // Node 30 connects to 31, 28, 23
+ 170:	                   08e7a423          	sw	x14,136(x15)
+     ### 	graph[31] = (30 << 6);                          // Node 31 has no neighbors
+ 174:	                   78000713          	addi	x14,x0,1920
+     ### 	graph[26] = (28 << 12) | (27 << 6) | 10; // Node 26 connects to 28, 27, 10
+ 178:	                   06d7ac23          	sw	x13,120(x15)
+     ### 	graph[31] = (30 << 6);                          // Node 31 has no neighbors
+ 17c:	                   08e7a623          	sw	x14,140(x15)
+     ### 	graph[27] = (26 << 6);                  // Node 27 connects to 26
+ 180:	                   68000693          	addi	x13,x0,1664
+     ###         bool sptSet[V];
+     ###     #else
+     ###         bool *sptSet = (bool *) 0x020000d0;
+     ###     #endif
+     ### 	
+     ### 	for (uint8_t i = 0; i < V; i++) dist[i] = 255, parent[i] = 32, sptSet[i] = false;
+ 184:	                   02000737          	lui	x14,0x2000
+     ### 	graph[27] = (26 << 6);                  // Node 27 connects to 26
+ 188:	                   06d7ae23          	sw	x13,124(x15)
+     ### int main(int argc, char const *argv[]) {
+ 18c:	                   fe010113          	addi	x2,x2,-32
+     ### 	graph[31] = (30 << 6);                          // Node 31 has no neighbors
+ 190:	                   09078793          	addi	x15,x15,144
+     ### 	for (uint8_t i = 0; i < V; i++) dist[i] = 255, parent[i] = 32, sptSet[i] = false;
+ 194:	                   fff00593          	addi	x11,x0,-1
+ 198:	                   02000613          	addi	x12,x0,32
+ 19c:	                   0b070693          	addi	x13,x14,176 # 20000b0 <__stack+0x70>
+ 1a0:	               /-> 00b78023          	sb	x11,0(x15)
+ 1a4:	               |   02c78023          	sb	x12,32(x15)
+ 1a8:	               |   04078023          	sb	x0,64(x15)
+ 1ac:	               |   00178793          	addi	x15,x15,1
+ 1b0:	               \-- fed798e3          	bne	x15,x13,1a0 <path_planner.c.9c188d97+0x22>
+     ### 	dist[START_POINT] = 0;
+ 1b4:	                   00074783          	lbu	x15,0(x14)
+     ### 	for (int count = 0; count < V - 1; count++) {
+     ### 	    int u , min = 255;
+     ### 	
+     ### 	    // Find the vertex with the minimum distance value
+     ### 	    for (int v = 0; v < V; v++) 
+     ### 	        if (!sptSet[v] && dist[v] <= min) min = dist[u=v];
+ 1b8:	                   020006b7          	lui	x13,0x2000
+     ### 	dist[START_POINT] = 0;
+ 1bc:	                   01f00513          	addi	x10,x0,31
+ 1c0:	                   0ff7f793          	andi	x15,x15,255
+ 1c4:	                   00f70733          	add	x14,x14,x15
+ 1c8:	                   08070823          	sb	x0,144(x14)
+     ### 	    for (int v = 0; v < V; v++) 
+ 1cc:	                   02000893          	addi	x17,x0,32
+     ### 	
+     ### 	    sptSet[u] = true;
+ 1d0:	                   00100e93          	addi	x29,x0,1
+     ### 	
+     ### 	    // Iterate through the neighbors encoded in the adjacency list
+     ### 	    for (uint8_t i = 0; i < 4; i++, graph[u] >>= 6) {
+     ### 	        uint8_t v = graph[u] & 0x3F;       // Get the least significant byte (neighbor)	        
+ 1d4:	                   01068f13          	addi	x30,x13,16 # 2000010 <__bss_end+0x10>
+     ### 	        if(v!=0){
+     ### 		        if (v == 32) v = 0;                 // If the neighbor is 32, it indicates no connection
+     ### 		        if (!sptSet[v] && dist[u] + 1 < dist[v]) dist[v] = dist[u] + 1, parent[v] = u;
+ 1d8:	                   09068f93          	addi	x31,x13,144
+     ### 	    for (int v = 0; v < V; v++) 
+ 1dc:	      /----------> 00000793          	addi	x15,x0,0
+     ### 	    int u , min = 255;
+ 1e0:	      |            0ff00713          	addi	x14,x0,255
+     ### 	        if (!sptSet[v] && dist[v] <= min) min = dist[u=v];
+ 1e4:	      |     /----> 00f68633          	add	x12,x13,x15
+ 1e8:	      |     |      0d064583          	lbu	x11,208(x12)
+ 1ec:	      |     |  /-- 00059a63          	bne	x11,x0,200 <path_planner.c.9c188d97+0x82>
+ 1f0:	      |     |  |   09064603          	lbu	x12,144(x12)
+ 1f4:	      |     |  +-- 00c74663          	blt	x14,x12,200 <path_planner.c.9c188d97+0x82>
+ 1f8:	      |     |  |   00060713          	addi	x14,x12,0
+ 1fc:	      |     |  |   00078813          	addi	x16,x15,0
+     ### 	    for (int v = 0; v < V; v++) 
+ 200:	      |     |  \-> 00178793          	addi	x15,x15,1
+ 204:	      |     \----- ff1790e3          	bne	x15,x17,1e4 <path_planner.c.9c188d97+0x66>
+     ### 	    sptSet[u] = true;
+ 208:	      |            01068333          	add	x6,x13,x16
+     ### 	        uint8_t v = graph[u] & 0x3F;       // Get the least significant byte (neighbor)	        
+ 20c:	      |            00281613          	slli	x12,x16,0x2
+     ### 	    sptSet[u] = true;
+ 210:	      |            0dd30823          	sb	x29,208(x6)
+     ### 	        uint8_t v = graph[u] & 0x3F;       // Get the least significant byte (neighbor)	        
+ 214:	      |            01e60633          	add	x12,x12,x30
+ 218:	      |            00400793          	addi	x15,x0,4
+ 21c:	      |  /-------> 00062703          	lw	x14,0(x12)
+ 220:	      |  |         03f77713          	andi	x14,x14,63
+     ### 	        if(v!=0){
+ 224:	      |  |  /----- 02070a63          	beq	x14,x0,258 <path_planner.c.9c188d97+0xda>
+     ### 		        if (v == 32) v = 0;                 // If the neighbor is 32, it indicates no connection
+ 228:	      |  |  |  /-- 01171463          	bne	x14,x17,230 <path_planner.c.9c188d97+0xb2>
+ 22c:	      |  |  |  |   00000713          	addi	x14,x0,0
+     ### 		        if (!sptSet[v] && dist[u] + 1 < dist[v]) dist[v] = dist[u] + 1, parent[v] = u;
+ 230:	      |  |  |  \-> 00e68e33          	add	x28,x13,x14
+ 234:	      |  |  |      0d0e4583          	lbu	x11,208(x28)
+ 238:	      |  |  +----- 02059063          	bne	x11,x0,258 <path_planner.c.9c188d97+0xda>
+ 23c:	      |  |  |      09034583          	lbu	x11,144(x6)
+ 240:	      |  |  |      01f70733          	add	x14,x14,x31
+ 244:	      |  |  |      00074283          	lbu	x5,0(x14)
+ 248:	      |  |  |      00158593          	addi	x11,x11,1
+ 24c:	      |  |  +----- 0055d663          	bge	x11,x5,258 <path_planner.c.9c188d97+0xda>
+ 250:	      |  |  |      00b70023          	sb	x11,0(x14)
+ 254:	      |  |  |      0b0e0823          	sb	x16,176(x28)
+     ### 	    for (uint8_t i = 0; i < 4; i++, graph[u] >>= 6) {
+ 258:	      |  |  \----> 00062703          	lw	x14,0(x12)
+ 25c:	      |  |         fff78793          	addi	x15,x15,-1
+ 260:	      |  |         0ff7f793          	andi	x15,x15,255
+ 264:	      |  |         00675713          	srli	x14,x14,0x6
+ 268:	      |  |         00e62023          	sw	x14,0(x12)
+ 26c:	      |  \-------- fa0798e3          	bne	x15,x0,21c <path_planner.c.9c188d97+0x9e>
+     ### 	for (int count = 0; count < V - 1; count++) {
+ 270:	      |            fff50513          	addi	x10,x10,-1 # 1ffffff <__flash_size+0x1fffbff>
+ 274:	      \----------- f60514e3          	bne	x10,x0,1dc <path_planner.c.9c188d97+0x5e>
+     ### 	        }
+     ### 	    }
+     ### 	}
+     ### 	
+     ### 	for (int crawl = END_POINT; crawl != 32; crawl = parent[crawl])
+ 278:	                   02000737          	lui	x14,0x2000
+ 27c:	                   00474683          	lbu	x13,4(x14) # 2000004 <__bss_end+0x4>
+ 280:	                   02000593          	addi	x11,x0,32
+     ###     uint8_t idx = 0;
+ 284:	                   00000713          	addi	x14,x0,0
+     ### 	for (int crawl = END_POINT; crawl != 32; crawl = parent[crawl])
+ 288:	                   0ff6f693          	andi	x13,x13,255
+ 28c:	                   02000537          	lui	x10,0x2000
+     ### 	    path_planned[idx++] = crawl;
+ 290:	      /----------> 00070613          	addi	x12,x14,0
+     ### 	for (int crawl = END_POINT; crawl != 32; crawl = parent[crawl])
+ 294:	      |        /-- 04b69063          	bne	x13,x11,2d4 <path_planner.c.9c188d97+0x156>
+ 298:	      |        |   00010693          	addi	x13,x2,0
+     ### 	
+     ### 	for (uint8_t i = 0; i < idx / 2; i++) {
+ 29c:	      |        |   00175513          	srli	x10,x14,0x1
+ 2a0:	      |        |   00e68633          	add	x12,x13,x14
+ 2a4:	      |        |   00068593          	addi	x11,x13,0
+ 2a8:	   /--|--------|-> fff60613          	addi	x12,x12,-1
+ 2ac:	   |  |     /--|-- 04f51463          	bne	x10,x15,2f4 <path_planner.c.9c188d97+0x176>
+     ### 	}
+     ### 
+     ###     // ##############################################
+     ### 
+     ###     // the node values are written into data memory sequentially.
+     ###     for (int i = 0; i < idx; ++i) {
+ 2b0:	   |  |     |  |   00000793          	addi	x15,x0,0
+     ###         NODE_POINT = path_planned[i];
+ 2b4:	   |  |     |  |   020006b7          	lui	x13,0x2000
+     ###     for (int i = 0; i < idx; ++i) {
+ 2b8:	/--|--|--/--|--|-X 04e79e63          	bne	x15,x14,314 <path_planner.c.9c188d97+0x196>
+     ###     }
+     ###     // Path Planning Computation Done Flag
+     ###     CPU_DONE = 1;
+ 2bc:	|  |  |  |  |  |   020007b7          	lui	x15,0x2000
+ 2c0:	|  |  |  |  |  |   00100713          	addi	x14,x0,1
+ 2c4:	|  |  |  |  |  |   00e78623          	sb	x14,12(x15) # 200000c <__bss_end+0xc>
+     ###         _put_str("################################\n");
+     ### 
+     ###     #endif
+     ### 
+     ###     return 0;
+     ### }
+ 2c8:	|  |  |  |  |  |   00000513          	addi	x10,x0,0
+ 2cc:	|  |  |  |  |  |   02010113          	addi	x2,x2,32
+ 2d0:	|  |  |  |  |  |   00008067          	jalr	x0,0(x1)
+     ### 	    path_planned[idx++] = crawl;
+ 2d4:	|  |  |  |  |  \-> 02010813          	addi	x16,x2,32
+ 2d8:	|  |  |  |  |      00c80633          	add	x12,x16,x12
+ 2dc:	|  |  |  |  |      00170713          	addi	x14,x14,1
+ 2e0:	|  |  |  |  |      fed60023          	sb	x13,-32(x12)
+     ### 	for (int crawl = END_POINT; crawl != 32; crawl = parent[crawl])
+ 2e4:	|  |  |  |  |      00d506b3          	add	x13,x10,x13
+ 2e8:	|  |  |  |  |      0b06c683          	lbu	x13,176(x13) # 20000b0 <__stack+0x70>
+     ### 	    path_planned[idx++] = crawl;
+ 2ec:	|  |  |  |  |      0ff77713          	andi	x14,x14,255
+     ### 	for (int crawl = END_POINT; crawl != 32; crawl = parent[crawl])
+ 2f0:	|  |  \--|--|----- fa1ff06f          	jal	x0,290 <path_planner.c.9c188d97+0x112>
+     ### 	    path_planned[i] = path_planned[idx - 1 - i];
+ 2f4:	|  |     |  \----> 00064883          	lbu	x17,0(x12)
+     ### 	    uint8_t temp = path_planned[i];
+ 2f8:	|  |     |         0006c803          	lbu	x16,0(x13)
+     ### 	for (uint8_t i = 0; i < idx / 2; i++) {
+ 2fc:	|  |     |         00178793          	addi	x15,x15,1
+     ### 	    path_planned[i] = path_planned[idx - 1 - i];
+ 300:	|  |     |         01168023          	sb	x17,0(x13)
+     ### 	    path_planned[idx - 1 - i] = temp;
+ 304:	|  |     |         01060023          	sb	x16,0(x12)
+     ### 	for (uint8_t i = 0; i < idx / 2; i++) {
+ 308:	|  |     |         0ff7f793          	andi	x15,x15,255
+ 30c:	|  |     |         00168693          	addi	x13,x13,1
+ 310:	|  \-----|-------- f99ff06f          	jal	x0,2a8 <path_planner.c.9c188d97+0x12a>
+     ###         NODE_POINT = path_planned[i];
+ 314:	|        \-------> 00f58633          	add	x12,x11,x15
+ 318:	|                  00064603          	lbu	x12,0(x12)
+     ###     for (int i = 0; i < idx; ++i) {
+ 31c:	|                  00178793          	addi	x15,x15,1
+     ###         NODE_POINT = path_planned[i];
+ 320:	|                  00c68423          	sb	x12,8(x13)
+     ###     for (int i = 0; i < idx; ++i) {
+ 324:	\----------------- f95ff06f          	jal	x0,2b8 <path_planner.c.9c188d97+0x13a>
+
+00000328 <_set_tls>:
+ 328:	00050213          	addi	x4,x10,0
+ 32c:	00008067          	jalr	x0,0(x1)
+
+00000330 <memcpy>:
+ 330:	       00050313          	addi	x6,x10,0
+ 334:	/----- 00060e63          	beq	x12,x0,350 <memcpy+0x20>
+ 338:	|  /-> 00058383          	lb	x7,0(x11)
+ 33c:	|  |   00730023          	sb	x7,0(x6)
+ 340:	|  |   fff60613          	addi	x12,x12,-1
+ 344:	|  |   00130313          	addi	x6,x6,1
+ 348:	|  |   00158593          	addi	x11,x11,1
+ 34c:	|  \-- fe0616e3          	bne	x12,x0,338 <memcpy+0x8>
+ 350:	\----> 00008067          	jalr	x0,0(x1)
+
+00000354 <memset>:
+ 354:	       00050313          	addi	x6,x10,0
+ 358:	/----- 00060a63          	beq	x12,x0,36c <memset+0x18>
+ 35c:	|  /-> 00b30023          	sb	x11,0(x6)
+ 360:	|  |   fff60613          	addi	x12,x12,-1
+ 364:	|  |   00130313          	addi	x6,x6,1
+ 368:	|  \-- fe061ae3          	bne	x12,x0,35c <memset+0x8>
+ 36c:	\----> 00008067          	jalr	x0,0(x1)

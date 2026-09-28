@@ -1,0 +1,59 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/e_yantra/task 2/eb_3699_task2a/t2a_uart/uart_tx/simulation/modelsim
+vtb
+Z1 !s110 1734781965
+!i10b 1
+!s100 `H_WkGW2]k`1c^71TY0a=3
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+ISC^@QmMHfk4SHAT[cQ:>S2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1729402530
+8E:/e_yantra/task 2/eb_3699_task2a/t2a_uart/uart_tx/.test/tb.v
+FE:/e_yantra/task 2/eb_3699_task2a/t2a_uart/uart_tx/.test/tb.v
+!i122 1
+L0 3 131
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1734781965.000000
+!s107 E:/e_yantra/task 2/eb_3699_task2a/t2a_uart/uart_tx/.test/tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/e_yantra/task 2/eb_3699_task2a/t2a_uart/uart_tx/.test|E:/e_yantra/task 2/eb_3699_task2a/t2a_uart/uart_tx/.test/tb.v|
+!i113 1
+Z6 o-vlog01compat -work work
+!s92 -vlog01compat -work work {+incdir+E:/e_yantra/task 2/eb_3699_task2a/t2a_uart/uart_tx/.test}
+Z7 tCvgOpt 0
+vuart_tx
+R1
+!i10b 1
+!s100 :WO`ZhX?C<jN4lcFXd>iY3
+R2
+IVPU8C^BFj]3h2Dnm6fL`W2
+R3
+R0
+w1734781920
+8E:/e_yantra/task 2/eb_3699_task2a/t2a_uart/uart_tx/code/uart_tx.v
+FE:/e_yantra/task 2/eb_3699_task2a/t2a_uart/uart_tx/code/uart_tx.v
+!i122 0
+L0 29 53
+R4
+r1
+!s85 0
+31
+R5
+!s107 E:/e_yantra/task 2/eb_3699_task2a/t2a_uart/uart_tx/code/uart_tx.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/e_yantra/task 2/eb_3699_task2a/t2a_uart/uart_tx/code|E:/e_yantra/task 2/eb_3699_task2a/t2a_uart/uart_tx/code/uart_tx.v|
+!i113 1
+R6
+!s92 -vlog01compat -work work {+incdir+E:/e_yantra/task 2/eb_3699_task2a/t2a_uart/uart_tx/code}
+R7

@@ -1,0 +1,8 @@
+
+State Machine - |LINE_FOLLOWER|motor_driver:inst8|state
+Name state.DOTTED_LINE state.RIGHT_TURN state.FORWERD state.000 state.END 
+state.000 0 0 0 0 0 
+state.FORWERD 0 0 1 1 0 
+state.RIGHT_TURN 0 1 0 1 0 
+state.DOTTED_LINE 1 0 0 1 0 
+state.END 0 0 0 1 1 

@@ -1,0 +1,328 @@
+# Reading pref.tcl
+# do LINE_FOLLOWER_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+D:/e-Yantra/task_5/dummy/task5a/task5a/cpu_codes/components {D:/e-Yantra/task_5/dummy/task5a/task5a/cpu_codes/components/reset_ff.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:10:39 on Jan 18,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/e-Yantra/task_5/dummy/task5a/task5a/cpu_codes/components" D:/e-Yantra/task_5/dummy/task5a/task5a/cpu_codes/components/reset_ff.v 
+# -- Compiling module reset_ff
+# 
+# Top level modules:
+# 	reset_ff
+# End time: 17:10:39 on Jan 18,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/e-Yantra/task_5/dummy/task5a/task5a/cpu_codes/components {D:/e-Yantra/task_5/dummy/task5a/task5a/cpu_codes/components/reg_file.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:10:39 on Jan 18,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/e-Yantra/task_5/dummy/task5a/task5a/cpu_codes/components" D:/e-Yantra/task_5/dummy/task5a/task5a/cpu_codes/components/reg_file.v 
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+# End time: 17:10:39 on Jan 18,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/e-Yantra/task_5/dummy/task5a/task5a/cpu_codes/components {D:/e-Yantra/task_5/dummy/task5a/task5a/cpu_codes/components/mux4.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:10:39 on Jan 18,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/e-Yantra/task_5/dummy/task5a/task5a/cpu_codes/components" D:/e-Yantra/task_5/dummy/task5a/task5a/cpu_codes/components/mux4.v 
+# -- Compiling module mux4
+# 
+# Top level modules:
+# 	mux4
+# End time: 17:10:40 on Jan 18,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/e-Yantra/task_5/dummy/task5a/task5a/cpu_codes/components {D:/e-Yantra/task_5/dummy/task5a/task5a/cpu_codes/components/mux2.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:10:40 on Jan 18,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/e-Yantra/task_5/dummy/task5a/task5a/cpu_codes/components" D:/e-Yantra/task_5/dummy/task5a/task5a/cpu_codes/components/mux2.v 
+# -- Compiling module mux2
+# 
+# Top level modules:
+# 	mux2
+# End time: 17:10:40 on Jan 18,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/e-Yantra/task_5/dummy/task5a/task5a/cpu_codes/components {D:/e-Yantra/task_5/dummy/task5a/task5a/cpu_codes/components/main_decoder.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:10:40 on Jan 18,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/e-Yantra/task_5/dummy/task5a/task5a/cpu_codes/components" D:/e-Yantra/task_5/dummy/task5a/task5a/cpu_codes/components/main_decoder.v 
+# -- Compiling module main_decoder
+# 
+# Top level modules:
+# 	main_decoder
+# End time: 17:10:40 on Jan 18,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/e-Yantra/task_5/dummy/task5a/task5a/cpu_codes/components {D:/e-Yantra/task_5/dummy/task5a/task5a/cpu_codes/components/imm_extend.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:10:40 on Jan 18,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/e-Yantra/task_5/dummy/task5a/task5a/cpu_codes/components" D:/e-Yantra/task_5/dummy/task5a/task5a/cpu_codes/components/imm_extend.v 
+# -- Compiling module imm_extend
+# 
+# Top level modules:
+# 	imm_extend
+# End time: 17:10:40 on Jan 18,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/e-Yantra/task_5/dummy/task5a/task5a/cpu_codes/components {D:/e-Yantra/task_5/dummy/task5a/task5a/cpu_codes/components/datapath.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:10:40 on Jan 18,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/e-Yantra/task_5/dummy/task5a/task5a/cpu_codes/components" D:/e-Yantra/task_5/dummy/task5a/task5a/cpu_codes/components/datapath.v 
+# -- Compiling module datapath
+# 
+# Top level modules:
+# 	datapath
+# End time: 17:10:40 on Jan 18,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/e-Yantra/task_5/dummy/task5a/task5a/cpu_codes/components {D:/e-Yantra/task_5/dummy/task5a/task5a/cpu_codes/components/controller.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:10:40 on Jan 18,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/e-Yantra/task_5/dummy/task5a/task5a/cpu_codes/components" D:/e-Yantra/task_5/dummy/task5a/task5a/cpu_codes/components/controller.v 
+# -- Compiling module controller
+# 
+# Top level modules:
+# 	controller
+# End time: 17:10:40 on Jan 18,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/e-Yantra/task_5/dummy/task5a/task5a/cpu_codes/components {D:/e-Yantra/task_5/dummy/task5a/task5a/cpu_codes/components/alu_decoder.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:10:40 on Jan 18,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/e-Yantra/task_5/dummy/task5a/task5a/cpu_codes/components" D:/e-Yantra/task_5/dummy/task5a/task5a/cpu_codes/components/alu_decoder.v 
+# -- Compiling module alu_decoder
+# 
+# Top level modules:
+# 	alu_decoder
+# End time: 17:10:40 on Jan 18,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/e-Yantra/task_5/dummy/task5a/task5a/cpu_codes/components {D:/e-Yantra/task_5/dummy/task5a/task5a/cpu_codes/components/alu.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:10:40 on Jan 18,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/e-Yantra/task_5/dummy/task5a/task5a/cpu_codes/components" D:/e-Yantra/task_5/dummy/task5a/task5a/cpu_codes/components/alu.v 
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# End time: 17:10:41 on Jan 18,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/e-Yantra/task_5/dummy/task5a/task5a/cpu_codes/components {D:/e-Yantra/task_5/dummy/task5a/task5a/cpu_codes/components/adder.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:10:41 on Jan 18,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/e-Yantra/task_5/dummy/task5a/task5a/cpu_codes/components" D:/e-Yantra/task_5/dummy/task5a/task5a/cpu_codes/components/adder.v 
+# -- Compiling module adder
+# 
+# Top level modules:
+# 	adder
+# End time: 17:10:41 on Jan 18,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/e-Yantra/task_5/dummy/task5a/task5a/cpu_codes {D:/e-Yantra/task_5/dummy/task5a/task5a/cpu_codes/t1c_riscv_cpu.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:10:41 on Jan 18,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/e-Yantra/task_5/dummy/task5a/task5a/cpu_codes" D:/e-Yantra/task_5/dummy/task5a/task5a/cpu_codes/t1c_riscv_cpu.v 
+# -- Compiling module t1c_riscv_cpu
+# 
+# Top level modules:
+# 	t1c_riscv_cpu
+# End time: 17:10:41 on Jan 18,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/e-Yantra/task_5/dummy/task5a/task5a/cpu_codes {D:/e-Yantra/task_5/dummy/task5a/task5a/cpu_codes/riscv_cpu.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:10:41 on Jan 18,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/e-Yantra/task_5/dummy/task5a/task5a/cpu_codes" D:/e-Yantra/task_5/dummy/task5a/task5a/cpu_codes/riscv_cpu.v 
+# -- Compiling module riscv_cpu
+# 
+# Top level modules:
+# 	riscv_cpu
+# End time: 17:10:41 on Jan 18,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/e-Yantra/task_5/dummy/task5a/task5a/cpu_codes {D:/e-Yantra/task_5/dummy/task5a/task5a/cpu_codes/data_mem.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:10:41 on Jan 18,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/e-Yantra/task_5/dummy/task5a/task5a/cpu_codes" D:/e-Yantra/task_5/dummy/task5a/task5a/cpu_codes/data_mem.v 
+# -- Compiling module data_mem
+# 
+# Top level modules:
+# 	data_mem
+# End time: 17:10:41 on Jan 18,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/e-Yantra/task_5/dummy/task5a/task5a {D:/e-Yantra/task_5/dummy/task5a/task5a/cpu_starter.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:10:41 on Jan 18,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/e-Yantra/task_5/dummy/task5a/task5a" D:/e-Yantra/task_5/dummy/task5a/task5a/cpu_starter.v 
+# -- Compiling module cpu_starter
+# 
+# Top level modules:
+# 	cpu_starter
+# End time: 17:10:41 on Jan 18,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/e-Yantra/task_5/dummy/task5a/task5a/code {D:/e-Yantra/task_5/dummy/task5a/task5a/code/t1b_cd_fd.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:10:41 on Jan 18,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/e-Yantra/task_5/dummy/task5a/task5a/code" D:/e-Yantra/task_5/dummy/task5a/task5a/code/t1b_cd_fd.v 
+# -- Compiling module t1b_cd_fd
+# 
+# Top level modules:
+# 	t1b_cd_fd
+# End time: 17:10:41 on Jan 18,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/e-Yantra/task_5/dummy/task5a/task5a/code {D:/e-Yantra/task_5/dummy/task5a/task5a/code/RGB.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:10:41 on Jan 18,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/e-Yantra/task_5/dummy/task5a/task5a/code" D:/e-Yantra/task_5/dummy/task5a/task5a/code/RGB.v 
+# -- Compiling module rgb
+# 
+# Top level modules:
+# 	rgb
+# End time: 17:10:41 on Jan 18,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/e-Yantra/task_5/dummy/task5a/task5a/code {D:/e-Yantra/task_5/dummy/task5a/task5a/code/uart_tx.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:10:41 on Jan 18,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/e-Yantra/task_5/dummy/task5a/task5a/code" D:/e-Yantra/task_5/dummy/task5a/task5a/code/uart_tx.v 
+# -- Compiling module uart_tx
+# 
+# Top level modules:
+# 	uart_tx
+# End time: 17:10:41 on Jan 18,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/e-Yantra/task_5/dummy/task5a/task5a/code {D:/e-Yantra/task_5/dummy/task5a/task5a/code/uart_rx.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:10:41 on Jan 18,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/e-Yantra/task_5/dummy/task5a/task5a/code" D:/e-Yantra/task_5/dummy/task5a/task5a/code/uart_rx.v 
+# -- Compiling module uart_rx
+# 
+# Top level modules:
+# 	uart_rx
+# End time: 17:10:41 on Jan 18,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/e-Yantra/task_5/dummy/task5a/task5a/code {D:/e-Yantra/task_5/dummy/task5a/task5a/code/pwm_generator.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:10:41 on Jan 18,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/e-Yantra/task_5/dummy/task5a/task5a/code" D:/e-Yantra/task_5/dummy/task5a/task5a/code/pwm_generator.v 
+# -- Compiling module pwm_generator
+# 
+# Top level modules:
+# 	pwm_generator
+# End time: 17:10:42 on Jan 18,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/e-Yantra/task_5/dummy/task5a/task5a/code {D:/e-Yantra/task_5/dummy/task5a/task5a/code/frequency_scaler.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:10:42 on Jan 18,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/e-Yantra/task_5/dummy/task5a/task5a/code" D:/e-Yantra/task_5/dummy/task5a/task5a/code/frequency_scaler.v 
+# -- Compiling module frequency_scaler
+# 
+# Top level modules:
+# 	frequency_scaler
+# End time: 17:10:42 on Jan 18,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/e-Yantra/task_5/dummy/task5a/task5a/code {D:/e-Yantra/task_5/dummy/task5a/task5a/code/Frequency_Scaling.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:10:42 on Jan 18,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/e-Yantra/task_5/dummy/task5a/task5a/code" D:/e-Yantra/task_5/dummy/task5a/task5a/code/Frequency_Scaling.v 
+# -- Compiling module Frequency_Scaling
+# 
+# Top level modules:
+# 	Frequency_Scaling
+# End time: 17:10:42 on Jan 18,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/e-Yantra/task_5/dummy/task5a/task5a/code {D:/e-Yantra/task_5/dummy/task5a/task5a/code/ADC_controller.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:10:42 on Jan 18,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/e-Yantra/task_5/dummy/task5a/task5a/code" D:/e-Yantra/task_5/dummy/task5a/task5a/code/ADC_controller.v 
+# -- Compiling module ADC_Controller
+# 
+# Top level modules:
+# 	ADC_Controller
+# End time: 17:10:42 on Jan 18,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/e-Yantra/task_5/dummy/task5a/task5a/code {D:/e-Yantra/task_5/dummy/task5a/task5a/code/motor_driver.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:10:42 on Jan 18,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/e-Yantra/task_5/dummy/task5a/task5a/code" D:/e-Yantra/task_5/dummy/task5a/task5a/code/motor_driver.v 
+# -- Compiling module motor_driver
+# 
+# Top level modules:
+# 	motor_driver
+# End time: 17:10:42 on Jan 18,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/e-Yantra/task_5/dummy/task5a/task5a/code {D:/e-Yantra/task_5/dummy/task5a/task5a/code/buffer.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:10:42 on Jan 18,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/e-Yantra/task_5/dummy/task5a/task5a/code" D:/e-Yantra/task_5/dummy/task5a/task5a/code/buffer.v 
+# -- Compiling module buffer
+# 
+# Top level modules:
+# 	buffer
+# End time: 17:10:42 on Jan 18,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/e-Yantra/task_5/dummy/task5a/task5a/cpu_codes {D:/e-Yantra/task_5/dummy/task5a/task5a/cpu_codes/instr_mem.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:10:42 on Jan 18,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/e-Yantra/task_5/dummy/task5a/task5a/cpu_codes" D:/e-Yantra/task_5/dummy/task5a/task5a/cpu_codes/instr_mem.v 
+# -- Compiling module instr_mem
+# 
+# Top level modules:
+# 	instr_mem
+# End time: 17:10:42 on Jan 18,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+D:/e-Yantra/task_5/dummy/task5a/task5a/.test {D:/e-Yantra/task_5/dummy/task5a/task5a/.test/tb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:10:42 on Jan 18,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/e-Yantra/task_5/dummy/task5a/task5a/.test" D:/e-Yantra/task_5/dummy/task5a/task5a/.test/tb.v 
+# -- Compiling module tb
+# 
+# Top level modules:
+# 	tb
+# End time: 17:10:42 on Jan 18,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" tb 
+# Start time: 17:10:42 on Jan 18,2025
+# Loading work.tb
+# Loading work.t1c_riscv_cpu
+# Loading work.riscv_cpu
+# Loading work.controller
+# Loading work.main_decoder
+# Loading work.alu_decoder
+# Loading work.datapath
+# Loading work.reset_ff
+# Loading work.adder
+# Loading work.mux2
+# Loading work.reg_file
+# Loading work.imm_extend
+# Loading work.alu
+# Loading work.mux4
+# Loading work.instr_mem
+# Loading work.data_mem
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Expected NODE POINT =  1, Actual NODE POINT =          1
+# No Error in this Node Point.
+# 
+# Expected NODE POINT =  0, Actual NODE POINT =         31
+# Error Count            1 -> Mismatch in Node Points, Check your design.
+# 
+# Expected NODE POINT = 10, Actual NODE POINT =         30
+# Error Count            2 -> Mismatch in Node Points, Check your design.
+# 
+# Expected NODE POINT = 24, Actual NODE POINT =         23
+# Error Count            3 -> Mismatch in Node Points, Check your design.
+# 
+# Error(s) encountered, please check your design!
+# ** Note: $stop    : D:/e-Yantra/task_5/dummy/task5a/task5a/.test/tb.v(183)
+#    Time: 100405 ns  Iteration: 1  Instance: /tb
+# Break in Module tb at D:/e-Yantra/task_5/dummy/task5a/task5a/.test/tb.v line 183
+# End time: 17:11:02 on Jan 18,2025, Elapsed time: 0:00:20
+# Errors: 0, Warnings: 0

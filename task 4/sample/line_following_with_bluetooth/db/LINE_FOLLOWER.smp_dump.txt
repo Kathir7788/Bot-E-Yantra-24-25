@@ -1,0 +1,22 @@
+
+State Machine - |LINE_FOLLOWER|uart_rx:inst13|state
+Name state.ENDBIT state.PARITYBIT state.DATABIT state.STARTBIT 
+state.STARTBIT 0 0 0 0 
+state.DATABIT 0 0 1 1 
+state.PARITYBIT 0 1 0 1 
+state.ENDBIT 1 0 0 1 
+
+State Machine - |LINE_FOLLOWER|uart_tx:inst14|state
+Name state.ENDBIT state.PARITYBIT state.DATABIT state.00 
+state.00 0 0 0 0 
+state.DATABIT 0 0 1 1 
+state.PARITYBIT 0 1 0 1 
+state.ENDBIT 1 0 0 1 
+
+State Machine - |LINE_FOLLOWER|motor_driver:inst15|state
+Name state.DOTTED_LINE state.RIGHT_TURN state.FORWERD state.END state.START 
+state.END 0 0 0 0 0 
+state.FORWERD 0 0 1 1 0 
+state.RIGHT_TURN 0 1 0 1 0 
+state.DOTTED_LINE 1 0 0 1 0 
+state.START 0 0 0 1 1 

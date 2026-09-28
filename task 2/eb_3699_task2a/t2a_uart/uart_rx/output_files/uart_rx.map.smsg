@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at uart_rx.v(54): always construct contains both blocking and non-blocking assignments File: E:/e_yantra/task 2/eb_3699_task2a/t2a_uart/uart_rx/code/uart_rx.v Line: 54

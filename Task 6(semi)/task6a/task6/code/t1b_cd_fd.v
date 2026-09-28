@@ -1,0 +1,114 @@
+/*
+# Team ID:          3699
+# Theme:            EcoMender Bot
+# Author List:      NISHANTH, HARIKARAN, ADITHIYA, KATHIR
+# Filename:         t1b_cd_fd
+# File Description: entire controls are done 
+# Global variables: 
+	clk_1MHz: 1MHz clock signal
+	cs_out: output signal of colour sensor
+	node: current node count
+	filter: blue, green, red selection filter
+	color: final color detected after manipulation
+*/
+
+// Module Declaration
+module t1b_cd_fd (
+    input  clk_1MHz, cs_out,
+	 input [4:0] node,
+    output reg [1:0] filter, color
+);
+
+// red   -> color = 1;
+// green -> color = 2;
+// blue  -> color = 3;
+
+//////////////////DO NOT MAKE ANY CHANGES ABOVE THIS LINE //////////////////
+localparam BLUE_FILTER = 2'b01,
+				RED_FILTER = 2'b00,
+				GREEN_FILTER = 2'b11,
+				CLEAR_FILTER = 2'b10;
+//reg state;
+reg [10:0] clk_count;
+reg [8:0] cs_out_count;
+reg [6:0] green_cs_out;
+reg [6:0] red_cs_out;
+reg [6:0] blue_cs_out;
+reg [1:0] filter_cs_out;
+reg 		 en;
+
+initial begin // editing this initial block is allowed
+    filter = 3; color = 0; clk_count = 0;cs_out_count = 0; filter_cs_out = 2'b10; en = 0;
+end
+
+/*
+Add your logic here
+*/
+
+always @(posedge cs_out)begin
+	if(clk_count > 50 && clk_count < 495) cs_out_count <= cs_out_count + 1;
+	if(clk_count < 100 && en)begin
+		cs_out_count <= 0;
+		en = 0;
+	end
+	if(cs_out_count == 0) en = 1;
+end
+
+always @(posedge  clk_1MHz)begin
+	case(filter)
+		GREEN_FILTER:begin
+			if(clk_count < 500) clk_count <= clk_count+1;
+			else begin 
+				clk_count <= 1;
+				filter <= RED_FILTER;
+				green_cs_out <= cs_out_count;
+			end
+		end
+		
+		RED_FILTER:begin
+			if(clk_count < 500) clk_count <= clk_count+1;
+			else begin 
+				clk_count <= 1;
+				filter <= BLUE_FILTER;
+				red_cs_out <= cs_out_count;
+			end
+		end
+		
+		BLUE_FILTER:begin
+			if(clk_count < 500) clk_count <= clk_count+1;
+			else begin 
+				clk_count <= 1;
+				filter <= CLEAR_FILTER;
+				blue_cs_out <= cs_out_count;
+			end
+		end
+		
+		CLEAR_FILTER:begin
+			if(red_cs_out >= 30 && blue_cs_out >= 30 && green_cs_out >= 30) filter_cs_out = 2'b10;
+			else if((green_cs_out > blue_cs_out) && (green_cs_out > red_cs_out)) filter_cs_out = 2'b11;
+			else if(red_cs_out > blue_cs_out) filter_cs_out = 2'b00;
+			else filter_cs_out = 2'b01; 
+			
+//			if(node == 0) filter_cs_out = 2'b10;
+			
+			case (filter_cs_out)
+				2'b11: begin
+					if((red_cs_out >= 13 && red_cs_out <= 15)&&(green_cs_out >= 18 && green_cs_out <= 20)&&(blue_cs_out >= 15 && blue_cs_out <= 17)) color <= 2;
+				end
+				2'b00: begin
+					if((red_cs_out >= 23 && red_cs_out <= 32)&&(green_cs_out >= 12 && green_cs_out <= 16)&&(blue_cs_out >= 13 && blue_cs_out <= 19)) color <= 1;
+				end
+				2'b01: begin 
+					if((red_cs_out >= 11 && red_cs_out <= 16)&&(green_cs_out >= 15 && green_cs_out <= 17)&&(blue_cs_out >= 25 && blue_cs_out <= 27)) color <= 3;
+				end
+				2'b10: color <= 0;
+			endcase
+			filter <= GREEN_FILTER;
+			clk_count <= 1;
+		end
+	endcase	
+end
+
+//////////////////DO NOT MAKE ANY CHANGES BELOW THIS LINE //////////////////
+
+endmodule

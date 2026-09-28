@@ -1,0 +1,10 @@
+Warning (10273): Verilog HDL warning at imm_extend.v(19): extended using "x" or "z" File: C:/Users/nisan/OneDrive/Desktop/dumy/task5a/cpu_codes/components/imm_extend.v Line: 19
+Warning (10268): Verilog HDL information at alu.v(12): always construct contains both blocking and non-blocking assignments File: C:/Users/nisan/OneDrive/Desktop/dumy/task5a/cpu_codes/components/alu.v Line: 12
+Warning (10268): Verilog HDL information at data_mem.v(20): always construct contains both blocking and non-blocking assignments File: C:/Users/nisan/OneDrive/Desktop/dumy/task5a/cpu_codes/data_mem.v Line: 20
+Warning (10268): Verilog HDL information at t1b_cd_fd.v(48): always construct contains both blocking and non-blocking assignments File: C:/Users/nisan/OneDrive/Desktop/dumy/task5a/code/t1b_cd_fd.v Line: 48
+Warning (10268): Verilog HDL information at t1b_cd_fd.v(57): always construct contains both blocking and non-blocking assignments File: C:/Users/nisan/OneDrive/Desktop/dumy/task5a/code/t1b_cd_fd.v Line: 57
+Warning (10268): Verilog HDL information at RGB.v(40): always construct contains both blocking and non-blocking assignments File: C:/Users/nisan/OneDrive/Desktop/dumy/task5a/code/RGB.v Line: 40
+Warning (10268): Verilog HDL information at uart_rx.v(62): always construct contains both blocking and non-blocking assignments File: C:/Users/nisan/OneDrive/Desktop/dumy/task5a/code/uart_rx.v Line: 62
+Warning (10268): Verilog HDL information at main_controller.v(182): always construct contains both blocking and non-blocking assignments File: C:/Users/nisan/OneDrive/Desktop/dumy/task5a/code/main_controller.v Line: 182
+Warning (10268): Verilog HDL information at main_controller.v(352): always construct contains both blocking and non-blocking assignments File: C:/Users/nisan/OneDrive/Desktop/dumy/task5a/code/main_controller.v Line: 352
+Info (10281): Verilog HDL Declaration information at main_controller.v(72): object "pick_drop" differs only in case from object "PICK_DROP" in the same scope File: C:/Users/nisan/OneDrive/Desktop/dumy/task5a/code/main_controller.v Line: 72

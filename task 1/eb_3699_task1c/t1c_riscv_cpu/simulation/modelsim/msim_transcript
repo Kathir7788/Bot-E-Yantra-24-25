@@ -1,0 +1,452 @@
+# Reading pref.tcl
+# do t1c_riscv_cpu_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+E:/e_yantra/task\ 1/eb_3699_task1c/t1c_riscv_cpu/code {E:/e_yantra/task 1/eb_3699_task1c/t1c_riscv_cpu/code/t1c_riscv_cpu.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:07:42 on Feb 22,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/e_yantra/task 1/eb_3699_task1c/t1c_riscv_cpu/code" E:/e_yantra/task 1/eb_3699_task1c/t1c_riscv_cpu/code/t1c_riscv_cpu.v 
+# -- Compiling module t1c_riscv_cpu
+# 
+# Top level modules:
+# 	t1c_riscv_cpu
+# End time: 23:07:42 on Feb 22,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+E:/e_yantra/task\ 1/eb_3699_task1c/t1c_riscv_cpu/code {E:/e_yantra/task 1/eb_3699_task1c/t1c_riscv_cpu/code/riscv_cpu.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:07:43 on Feb 22,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/e_yantra/task 1/eb_3699_task1c/t1c_riscv_cpu/code" E:/e_yantra/task 1/eb_3699_task1c/t1c_riscv_cpu/code/riscv_cpu.v 
+# -- Compiling module riscv_cpu
+# 
+# Top level modules:
+# 	riscv_cpu
+# End time: 23:07:43 on Feb 22,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+E:/e_yantra/task\ 1/eb_3699_task1c/t1c_riscv_cpu/code {E:/e_yantra/task 1/eb_3699_task1c/t1c_riscv_cpu/code/data_mem.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:07:43 on Feb 22,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/e_yantra/task 1/eb_3699_task1c/t1c_riscv_cpu/code" E:/e_yantra/task 1/eb_3699_task1c/t1c_riscv_cpu/code/data_mem.v 
+# -- Compiling module data_mem
+# 
+# Top level modules:
+# 	data_mem
+# End time: 23:07:43 on Feb 22,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+E:/e_yantra/task\ 1/eb_3699_task1c/t1c_riscv_cpu/code/components {E:/e_yantra/task 1/eb_3699_task1c/t1c_riscv_cpu/code/components/reset_ff.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:07:43 on Feb 22,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/e_yantra/task 1/eb_3699_task1c/t1c_riscv_cpu/code/components" E:/e_yantra/task 1/eb_3699_task1c/t1c_riscv_cpu/code/components/reset_ff.v 
+# -- Compiling module reset_ff
+# 
+# Top level modules:
+# 	reset_ff
+# End time: 23:07:43 on Feb 22,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+E:/e_yantra/task\ 1/eb_3699_task1c/t1c_riscv_cpu/code/components {E:/e_yantra/task 1/eb_3699_task1c/t1c_riscv_cpu/code/components/reg_file.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:07:43 on Feb 22,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/e_yantra/task 1/eb_3699_task1c/t1c_riscv_cpu/code/components" E:/e_yantra/task 1/eb_3699_task1c/t1c_riscv_cpu/code/components/reg_file.v 
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+# End time: 23:07:44 on Feb 22,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+E:/e_yantra/task\ 1/eb_3699_task1c/t1c_riscv_cpu/code/components {E:/e_yantra/task 1/eb_3699_task1c/t1c_riscv_cpu/code/components/mux4.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:07:44 on Feb 22,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/e_yantra/task 1/eb_3699_task1c/t1c_riscv_cpu/code/components" E:/e_yantra/task 1/eb_3699_task1c/t1c_riscv_cpu/code/components/mux4.v 
+# -- Compiling module mux4
+# 
+# Top level modules:
+# 	mux4
+# End time: 23:07:44 on Feb 22,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+E:/e_yantra/task\ 1/eb_3699_task1c/t1c_riscv_cpu/code/components {E:/e_yantra/task 1/eb_3699_task1c/t1c_riscv_cpu/code/components/mux2.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:07:44 on Feb 22,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/e_yantra/task 1/eb_3699_task1c/t1c_riscv_cpu/code/components" E:/e_yantra/task 1/eb_3699_task1c/t1c_riscv_cpu/code/components/mux2.v 
+# -- Compiling module mux2
+# 
+# Top level modules:
+# 	mux2
+# End time: 23:07:44 on Feb 22,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+E:/e_yantra/task\ 1/eb_3699_task1c/t1c_riscv_cpu/code/components {E:/e_yantra/task 1/eb_3699_task1c/t1c_riscv_cpu/code/components/main_decoder.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:07:44 on Feb 22,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/e_yantra/task 1/eb_3699_task1c/t1c_riscv_cpu/code/components" E:/e_yantra/task 1/eb_3699_task1c/t1c_riscv_cpu/code/components/main_decoder.v 
+# -- Compiling module main_decoder
+# 
+# Top level modules:
+# 	main_decoder
+# End time: 23:07:44 on Feb 22,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+E:/e_yantra/task\ 1/eb_3699_task1c/t1c_riscv_cpu/code/components {E:/e_yantra/task 1/eb_3699_task1c/t1c_riscv_cpu/code/components/imm_extend.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:07:44 on Feb 22,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/e_yantra/task 1/eb_3699_task1c/t1c_riscv_cpu/code/components" E:/e_yantra/task 1/eb_3699_task1c/t1c_riscv_cpu/code/components/imm_extend.v 
+# -- Compiling module imm_extend
+# 
+# Top level modules:
+# 	imm_extend
+# End time: 23:07:44 on Feb 22,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+E:/e_yantra/task\ 1/eb_3699_task1c/t1c_riscv_cpu/code/components {E:/e_yantra/task 1/eb_3699_task1c/t1c_riscv_cpu/code/components/datapath.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:07:44 on Feb 22,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/e_yantra/task 1/eb_3699_task1c/t1c_riscv_cpu/code/components" E:/e_yantra/task 1/eb_3699_task1c/t1c_riscv_cpu/code/components/datapath.v 
+# -- Compiling module datapath
+# 
+# Top level modules:
+# 	datapath
+# End time: 23:07:44 on Feb 22,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+E:/e_yantra/task\ 1/eb_3699_task1c/t1c_riscv_cpu/code/components {E:/e_yantra/task 1/eb_3699_task1c/t1c_riscv_cpu/code/components/controller.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:07:44 on Feb 22,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/e_yantra/task 1/eb_3699_task1c/t1c_riscv_cpu/code/components" E:/e_yantra/task 1/eb_3699_task1c/t1c_riscv_cpu/code/components/controller.v 
+# -- Compiling module controller
+# 
+# Top level modules:
+# 	controller
+# End time: 23:07:44 on Feb 22,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+E:/e_yantra/task\ 1/eb_3699_task1c/t1c_riscv_cpu/code/components {E:/e_yantra/task 1/eb_3699_task1c/t1c_riscv_cpu/code/components/alu_decoder.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:07:45 on Feb 22,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/e_yantra/task 1/eb_3699_task1c/t1c_riscv_cpu/code/components" E:/e_yantra/task 1/eb_3699_task1c/t1c_riscv_cpu/code/components/alu_decoder.v 
+# -- Compiling module alu_decoder
+# 
+# Top level modules:
+# 	alu_decoder
+# End time: 23:07:45 on Feb 22,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+E:/e_yantra/task\ 1/eb_3699_task1c/t1c_riscv_cpu/code/components {E:/e_yantra/task 1/eb_3699_task1c/t1c_riscv_cpu/code/components/alu.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:07:45 on Feb 22,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/e_yantra/task 1/eb_3699_task1c/t1c_riscv_cpu/code/components" E:/e_yantra/task 1/eb_3699_task1c/t1c_riscv_cpu/code/components/alu.v 
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# End time: 23:07:45 on Feb 22,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+E:/e_yantra/task\ 1/eb_3699_task1c/t1c_riscv_cpu/code/components {E:/e_yantra/task 1/eb_3699_task1c/t1c_riscv_cpu/code/components/adder.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:07:45 on Feb 22,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/e_yantra/task 1/eb_3699_task1c/t1c_riscv_cpu/code/components" E:/e_yantra/task 1/eb_3699_task1c/t1c_riscv_cpu/code/components/adder.v 
+# -- Compiling module adder
+# 
+# Top level modules:
+# 	adder
+# End time: 23:07:45 on Feb 22,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+E:/e_yantra/task\ 1/eb_3699_task1c/t1c_riscv_cpu/code {E:/e_yantra/task 1/eb_3699_task1c/t1c_riscv_cpu/code/instr_mem.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:07:45 on Feb 22,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/e_yantra/task 1/eb_3699_task1c/t1c_riscv_cpu/code" E:/e_yantra/task 1/eb_3699_task1c/t1c_riscv_cpu/code/instr_mem.v 
+# -- Compiling module instr_mem
+# 
+# Top level modules:
+# 	instr_mem
+# End time: 23:07:45 on Feb 22,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+E:/e_yantra/task\ 1/eb_3699_task1c/t1c_riscv_cpu/.test {E:/e_yantra/task 1/eb_3699_task1c/t1c_riscv_cpu/.test/tb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:07:45 on Feb 22,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/e_yantra/task 1/eb_3699_task1c/t1c_riscv_cpu/.test" E:/e_yantra/task 1/eb_3699_task1c/t1c_riscv_cpu/.test/tb.v 
+# -- Compiling module tb
+# 
+# Top level modules:
+# 	tb
+# End time: 23:07:45 on Feb 22,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" tb 
+# Start time: 23:07:45 on Feb 22,2025
+# Loading work.tb
+# Loading work.t1c_riscv_cpu
+# Loading work.riscv_cpu
+# Loading work.controller
+# Loading work.main_decoder
+# Loading work.alu_decoder
+# Loading work.datapath
+# Loading work.reset_ff
+# Loading work.adder
+# Loading work.mux2
+# Loading work.reg_file
+# Loading work.imm_extend
+# Loading work.alu
+# Loading work.mux4
+# Loading work.instr_mem
+# Loading work.data_mem
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 2000 ns
+# Result: 16 PCW: 4 DataAdrW: 16 WriteDataW: 0 test1: 2 test2: 0 test3: 16777491
+# Result: 4294967293 PCW: 8 DataAdrW: 4294967293 WriteDataW: 0 test1: 3 test2: 0 test3: 4291821971
+# 1. addi implementation is correct for x0 
+# Result: 0 PCW: 12 DataAdrW: 0 WriteDataW: 0 test1: 4 test2: 0 test3: 531
+# Result: 9 PCW: 16 DataAdrW: 9 WriteDataW: 0 test1: 5 test2: 0 test3: 12681875
+# 2. addi implementation is correct 
+# Result: 64 PCW: 20 DataAdrW: 64 WriteDataW: 10000 test1: 6 test2: 16 test3: 2167571
+# 3. slli implementation is correct 
+# Result: 0 PCW: 24 DataAdrW: 0 WriteDataW: 0 test1: 7 test2: 0 test3: 4278264723
+# 4. slti implementation is correct 
+# Result: 1 PCW: 28 DataAdrW: 1 WriteDataW: 0 test1: 8 test2: 0 test3: 4278268947
+# 5. sltiu implementation is correct 
+# Result: 2 PCW: 32 DataAdrW: 2 WriteDataW: 0 test1: 9 test2: 0 test3: 18957459
+# 6. xori implementation is correct 
+# Result: 536870911 PCW: 36 DataAdrW: 536870911 WriteDataW: 11111111111111111111111111111101 test1: 10 test2: 4294967293 test3: 3265811
+# 7. srli implementation is correct 
+# Result: 4294967295 PCW: 40 DataAdrW: 4294967295 WriteDataW: 11111111111111111111111111111101 test1: 11 test2: 4294967293 test3: 1077007763
+# 8. srai implementation is correct 
+# Result: 4294967295 PCW: 44 DataAdrW: 4294967295 WriteDataW: 11111111111111111111111111111101 test1: 12 test2: 4294967293 test3: 3270163
+# 9. ori implementation is correct 
+# Result: 1 PCW: 48 DataAdrW: 1 WriteDataW: 11111111111111111111111111111101 test1: 13 test2: 4294967293 test3: 3274387
+# 10. andi implementation is correct
+# Result: 17 PCW: 52 DataAdrW: 17 WriteDataW: 1 test1: 14 test2: 1 test3: 1115955
+# 11. add implementation is correct 
+# Result: 15 PCW: 56 DataAdrW: 15 WriteDataW: 1 test1: 15 test2: 1 test3: 1074857907
+# 12. sub implementation is correct 
+# Result: 32 PCW: 60 DataAdrW: 32 WriteDataW: 1 test1: 16 test2: 1 test3: 1120307
+# 13. sll implementation is correct 
+# Result: 0 PCW: 64 DataAdrW: 0 WriteDataW: 11111111111111111111111111111101 test1: 17 test2: 4294967293 test3: 3221683
+# 14. slt implementation is correct 
+# Result: 1 PCW: 68 DataAdrW: 1 WriteDataW: 11111111111111111111111111111101 test1: 18 test2: 4294967293 test3: 3225907
+# 15. sltu implementation is correct 
+# Result: 17 PCW: 72 DataAdrW: 17 WriteDataW: 1 test1: 19 test2: 1 test3: 1132979
+# 16. xor implementation is correct 
+# Result: 8 PCW: 76 DataAdrW: 8 WriteDataW: 1 test1: 20 test2: 1 test3: 1137203
+# 17. srl implementation is correct 
+# Result: 8 PCW: 80 DataAdrW: 8 WriteDataW: 1 test1: 21 test2: 1 test3: 1074879155
+# 18. sra implementation is correct 
+# Result: 17 PCW: 84 DataAdrW: 17 WriteDataW: 1 test1: 22 test2: 1 test3: 1141555
+# 19. or implementation is correct 
+# Result: 0 PCW: 88 DataAdrW: 0 WriteDataW: 1 test1: 23 test2: 1 test3: 1145779
+# 20. and implementation is correct 
+# Result: 33554432 PCW: 92 DataAdrW: x WriteDataW: 0 test1: 24 test2: 0 test3: 33557559
+# 21. lui implementation is correct 
+# Result: 33554528 PCW: 96 DataAdrW: x WriteDataW: 0 test1: 25 test2: 0 test3: 33557655
+# 22. auipc implementation is correct 
+# Result: 33 PCW: 100 DataAdrW: 33 WriteDataW: 1 test1: 17 test2: 1 test3: 1116323
+# 23. sb implementation is correct
+# Result: 38 PCW: 104 DataAdrW: 38 WriteDataW: 11111111111111111111111111111101 test1: 22 test2: 4294967293 test3: 3218211
+# 24. sh implementation is correct
+# Result: 40 PCW: 108 DataAdrW: 40 WriteDataW: 10000 test1: 24 test2: 16 test3: 2173987
+# 25. sw implementation is correct
+# Result: 1 PCW: 112 DataAdrW: 33 WriteDataW: 0 test1: 26 test2: 0 test3: 37850371
+# 26. lb implementation is correct
+# Result: 4294967293 PCW: 116 DataAdrW: 38 WriteDataW: 10 test1: 27 test2: 2 test3: 43097475
+# 27. lh implementation is correct
+# Result: 16 PCW: 120 DataAdrW: 40 WriteDataW: 11111111111111111111111111111111 test1: 28 test2: 4294967295 test3: 45198851
+# 28. lw implementation is correct
+# Result: 1 PCW: 124 DataAdrW: 33 WriteDataW: 0 test1: 29 test2: 0 test3: 37867139
+# 29. lbu implementation is correct
+# Result: 65533 PCW: 128 DataAdrW: 38 WriteDataW: 10 test1: 30 test2: 2 test3: 43114243
+# 30. lhu implementation is correct
+# Result: 0 PCW: 132 DataAdrW: 0 WriteDataW: 0 test1: 4 test2: 0 test3: 531
+# Result: 4294967291 PCW: 136 DataAdrW: 4294967291 WriteDataW: 11111111111111111111111111111101 test1: 6 test2: 4294967293 test3: 4289725203
+# Result: 5 PCW: 140 DataAdrW: 5 WriteDataW: 1001 test1: 7 test2: 9 test3: 5243795
+# Result: 1 PCW: 144 DataAdrW: 1 WriteDataW: 1 test1: 4 test2: 1 test3: 1180179
+# 31. blt is executing
+# Result: 4294967292 PCW: 148 DataAdrW: 4294967292 WriteDataW: 1 test1: 6 test2: 1 test3: 1245971
+# Result: 4294967287 PCW: 152 DataAdrW: 4294967287 WriteDataW: 101 test1: 25 test2: 5 test3: 4268969187
+# Result: 2 PCW: 144 DataAdrW: 2 WriteDataW: 1 test1: 4 test2: 1 test3: 1180179
+# 31. blt is executing
+# Result: 4294967293 PCW: 148 DataAdrW: 4294967293 WriteDataW: 1 test1: 6 test2: 1 test3: 1245971
+# Result: 4294967288 PCW: 152 DataAdrW: 4294967288 WriteDataW: 101 test1: 25 test2: 5 test3: 4268969187
+# Result: 3 PCW: 144 DataAdrW: 3 WriteDataW: 1 test1: 4 test2: 1 test3: 1180179
+# 31. blt is executing
+# Result: 4294967294 PCW: 148 DataAdrW: 4294967294 WriteDataW: 1 test1: 6 test2: 1 test3: 1245971
+# Result: 4294967289 PCW: 152 DataAdrW: 4294967289 WriteDataW: 101 test1: 25 test2: 5 test3: 4268969187
+# Result: 4 PCW: 144 DataAdrW: 4 WriteDataW: 1 test1: 4 test2: 1 test3: 1180179
+# 31. blt is executing
+# Result: 4294967295 PCW: 148 DataAdrW: 4294967295 WriteDataW: 1 test1: 6 test2: 1 test3: 1245971
+# Result: 4294967290 PCW: 152 DataAdrW: 4294967290 WriteDataW: 101 test1: 25 test2: 5 test3: 4268969187
+# Result: 5 PCW: 144 DataAdrW: 5 WriteDataW: 1 test1: 4 test2: 1 test3: 1180179
+# 31. blt is executing
+# Result: 0 PCW: 148 DataAdrW: 0 WriteDataW: 1 test1: 6 test2: 1 test3: 1245971
+# Result: 4294967291 PCW: 152 DataAdrW: 4294967291 WriteDataW: 101 test1: 25 test2: 5 test3: 4268969187
+# Result: 6 PCW: 144 DataAdrW: 6 WriteDataW: 1 test1: 4 test2: 1 test3: 1180179
+# 31. blt is executing
+# Result: 1 PCW: 148 DataAdrW: 1 WriteDataW: 1 test1: 6 test2: 1 test3: 1245971
+# Result: 4294967292 PCW: 152 DataAdrW: 4294967292 WriteDataW: 101 test1: 25 test2: 5 test3: 4268969187
+# Result: 7 PCW: 144 DataAdrW: 7 WriteDataW: 1 test1: 4 test2: 1 test3: 1180179
+# 31. blt is executing
+# Result: 2 PCW: 148 DataAdrW: 2 WriteDataW: 1 test1: 6 test2: 1 test3: 1245971
+# Result: 4294967293 PCW: 152 DataAdrW: 4294967293 WriteDataW: 101 test1: 25 test2: 5 test3: 4268969187
+# Result: 8 PCW: 144 DataAdrW: 8 WriteDataW: 1 test1: 4 test2: 1 test3: 1180179
+# 31. blt is executing
+# Result: 3 PCW: 148 DataAdrW: 3 WriteDataW: 1 test1: 6 test2: 1 test3: 1245971
+# Result: 4294967294 PCW: 152 DataAdrW: 4294967294 WriteDataW: 101 test1: 25 test2: 5 test3: 4268969187
+# Result: 9 PCW: 144 DataAdrW: 9 WriteDataW: 1 test1: 4 test2: 1 test3: 1180179
+# 31. blt is executing
+# Result: 4 PCW: 148 DataAdrW: 4 WriteDataW: 1 test1: 6 test2: 1 test3: 1245971
+# Result: 4294967295 PCW: 152 DataAdrW: 4294967295 WriteDataW: 101 test1: 25 test2: 5 test3: 4268969187
+# Result: 10 PCW: 144 DataAdrW: 10 WriteDataW: 1 test1: 4 test2: 1 test3: 1180179
+# 31. blt is executing
+# Result: 5 PCW: 148 DataAdrW: 5 WriteDataW: 1 test1: 6 test2: 1 test3: 1245971
+# Result: 0 PCW: 152 DataAdrW: 0 WriteDataW: 101 test1: 25 test2: 5 test3: 4268969187
+# Result: 5 PCW: 156 DataAdrW: 5 WriteDataW: 101 test1: 6 test2: 5 test3: 6292275
+# 31. blt implementation is correct 
+# Result: 0 PCW: 160 DataAdrW: 0 WriteDataW: 0 test1: 4 test2: 0 test3: 531
+# Result: 4294967291 PCW: 164 DataAdrW: 4294967291 WriteDataW: 11111111111111111111111111111101 test1: 8 test2: 4294967293 test3: 4289725459
+# Result: 5 PCW: 168 DataAdrW: 5 WriteDataW: 1001 test1: 9 test2: 9 test3: 5244051
+# Result: 1 PCW: 172 DataAdrW: 1 WriteDataW: 1 test1: 4 test2: 1 test3: 1180179
+# 32. bge is executing
+# Result: 4 PCW: 176 DataAdrW: 4 WriteDataW: 0 test1: 9 test2: 0 test3: 4294214803
+# Result: 9 PCW: 180 DataAdrW: 9 WriteDataW: 11111111111111111111111111111011 test1: 25 test2: 4294967291 test3: 4270120163
+# Result: 2 PCW: 172 DataAdrW: 2 WriteDataW: 1 test1: 4 test2: 1 test3: 1180179
+# 32. bge is executing
+# Result: 3 PCW: 176 DataAdrW: 3 WriteDataW: 0 test1: 9 test2: 0 test3: 4294214803
+# Result: 8 PCW: 180 DataAdrW: 8 WriteDataW: 11111111111111111111111111111011 test1: 25 test2: 4294967291 test3: 4270120163
+# Result: 3 PCW: 172 DataAdrW: 3 WriteDataW: 1 test1: 4 test2: 1 test3: 1180179
+# 32. bge is executing
+# Result: 2 PCW: 176 DataAdrW: 2 WriteDataW: 0 test1: 9 test2: 0 test3: 4294214803
+# Result: 7 PCW: 180 DataAdrW: 7 WriteDataW: 11111111111111111111111111111011 test1: 25 test2: 4294967291 test3: 4270120163
+# Result: 4 PCW: 172 DataAdrW: 4 WriteDataW: 1 test1: 4 test2: 1 test3: 1180179
+# 32. bge is executing
+# Result: 1 PCW: 176 DataAdrW: 1 WriteDataW: 0 test1: 9 test2: 0 test3: 4294214803
+# Result: 6 PCW: 180 DataAdrW: 6 WriteDataW: 11111111111111111111111111111011 test1: 25 test2: 4294967291 test3: 4270120163
+# Result: 5 PCW: 172 DataAdrW: 5 WriteDataW: 1 test1: 4 test2: 1 test3: 1180179
+# 32. bge is executing
+# Result: 0 PCW: 176 DataAdrW: 0 WriteDataW: 0 test1: 9 test2: 0 test3: 4294214803
+# Result: 5 PCW: 180 DataAdrW: 5 WriteDataW: 11111111111111111111111111111011 test1: 25 test2: 4294967291 test3: 4270120163
+# Result: 6 PCW: 172 DataAdrW: 6 WriteDataW: 1 test1: 4 test2: 1 test3: 1180179
+# 32. bge is executing
+# Result: 4294967295 PCW: 176 DataAdrW: 4294967295 WriteDataW: 0 test1: 9 test2: 0 test3: 4294214803
+# Result: 4 PCW: 180 DataAdrW: 4 WriteDataW: 11111111111111111111111111111011 test1: 25 test2: 4294967291 test3: 4270120163
+# Result: 7 PCW: 172 DataAdrW: 7 WriteDataW: 1 test1: 4 test2: 1 test3: 1180179
+# 32. bge is executing
+# Result: 4294967294 PCW: 176 DataAdrW: 4294967294 WriteDataW: 0 test1: 9 test2: 0 test3: 4294214803
+# Result: 3 PCW: 180 DataAdrW: 3 WriteDataW: 11111111111111111111111111111011 test1: 25 test2: 4294967291 test3: 4270120163
+# Result: 8 PCW: 172 DataAdrW: 8 WriteDataW: 1 test1: 4 test2: 1 test3: 1180179
+# 32. bge is executing
+# Result: 4294967293 PCW: 176 DataAdrW: 4294967293 WriteDataW: 0 test1: 9 test2: 0 test3: 4294214803
+# Result: 2 PCW: 180 DataAdrW: 2 WriteDataW: 11111111111111111111111111111011 test1: 25 test2: 4294967291 test3: 4270120163
+# Result: 9 PCW: 172 DataAdrW: 9 WriteDataW: 1 test1: 4 test2: 1 test3: 1180179
+# 32. bge is executing
+# Result: 4294967292 PCW: 176 DataAdrW: 4294967292 WriteDataW: 0 test1: 9 test2: 0 test3: 4294214803
+# Result: 1 PCW: 180 DataAdrW: 1 WriteDataW: 11111111111111111111111111111011 test1: 25 test2: 4294967291 test3: 4270120163
+# Result: 10 PCW: 172 DataAdrW: 10 WriteDataW: 1 test1: 4 test2: 1 test3: 1180179
+# 32. bge is executing
+# Result: 4294967291 PCW: 176 DataAdrW: 4294967291 WriteDataW: 0 test1: 9 test2: 0 test3: 4294214803
+# Result: 0 PCW: 180 DataAdrW: 0 WriteDataW: 11111111111111111111111111111011 test1: 25 test2: 4294967291 test3: 4270120163
+# Result: 11 PCW: 172 DataAdrW: 11 WriteDataW: 1 test1: 4 test2: 1 test3: 1180179
+# 32. bge is executing
+# Result: 4294967290 PCW: 176 DataAdrW: 4294967290 WriteDataW: 0 test1: 9 test2: 0 test3: 4294214803
+# Result: 4294967295 PCW: 180 DataAdrW: 4294967295 WriteDataW: 11111111111111111111111111111011 test1: 25 test2: 4294967291 test3: 4270120163
+# Result: 4294967290 PCW: 184 DataAdrW: 4294967290 WriteDataW: 11111111111111111111111111111010 test1: 9 test2: 4294967290 test3: 9438387
+# 32. bge implementation is correct
+# Result: 0 PCW: 188 DataAdrW: 0 WriteDataW: 0 test1: 4 test2: 0 test3: 531
+# Result: 1 PCW: 192 DataAdrW: 1 WriteDataW: 1 test1: 10 test2: 1 test3: 1049875
+# Result: 5 PCW: 196 DataAdrW: 5 WriteDataW: 1001 test1: 11 test2: 9 test3: 5244307
+# Result: 1 PCW: 200 DataAdrW: 1 WriteDataW: 1 test1: 4 test2: 1 test3: 1180179
+# 33. bltu is executing
+# Result: 2 PCW: 204 DataAdrW: 2 WriteDataW: 1 test1: 10 test2: 1 test3: 1377555
+# Result: 4294967293 PCW: 208 DataAdrW: 4294967293 WriteDataW: 101 test1: 25 test2: 5 test3: 4273302755
+# Result: 2 PCW: 200 DataAdrW: 2 WriteDataW: 1 test1: 4 test2: 1 test3: 1180179
+# 33. bltu is executing
+# Result: 3 PCW: 204 DataAdrW: 3 WriteDataW: 1 test1: 10 test2: 1 test3: 1377555
+# Result: 4294967294 PCW: 208 DataAdrW: 4294967294 WriteDataW: 101 test1: 25 test2: 5 test3: 4273302755
+# Result: 3 PCW: 200 DataAdrW: 3 WriteDataW: 1 test1: 4 test2: 1 test3: 1180179
+# 33. bltu is executing
+# Result: 4 PCW: 204 DataAdrW: 4 WriteDataW: 1 test1: 10 test2: 1 test3: 1377555
+# Result: 4294967295 PCW: 208 DataAdrW: 4294967295 WriteDataW: 101 test1: 25 test2: 5 test3: 4273302755
+# Result: 4 PCW: 200 DataAdrW: 4 WriteDataW: 1 test1: 4 test2: 1 test3: 1180179
+# 33. bltu is executing
+# Result: 5 PCW: 204 DataAdrW: 5 WriteDataW: 1 test1: 10 test2: 1 test3: 1377555
+# Result: 0 PCW: 208 DataAdrW: 0 WriteDataW: 101 test1: 25 test2: 5 test3: 4273302755
+# Result: 5 PCW: 212 DataAdrW: 5 WriteDataW: 101 test1: 10 test2: 5 test3: 10487091
+# 33. bltu implementation is correct 
+# Result: 0 PCW: 216 DataAdrW: 0 WriteDataW: 0 test1: 4 test2: 0 test3: 531
+# Result: 1 PCW: 220 DataAdrW: 1 WriteDataW: 1 test1: 12 test2: 1 test3: 1050131
+# Result: 5 PCW: 224 DataAdrW: 5 WriteDataW: 1001 test1: 13 test2: 9 test3: 5244563
+# Result: 1 PCW: 228 DataAdrW: 1 WriteDataW: 1 test1: 4 test2: 1 test3: 1180179
+# 34. bgeu is executing
+# Result: 4 PCW: 232 DataAdrW: 4 WriteDataW: 0 test1: 13 test2: 0 test3: 4294346387
+# Result: 3 PCW: 236 DataAdrW: 3 WriteDataW: 1 test1: 25 test2: 1 test3: 4274453731
+# Result: 2 PCW: 228 DataAdrW: 2 WriteDataW: 1 test1: 4 test2: 1 test3: 1180179
+# 34. bgeu is executing
+# Result: 3 PCW: 232 DataAdrW: 3 WriteDataW: 0 test1: 13 test2: 0 test3: 4294346387
+# Result: 2 PCW: 236 DataAdrW: 2 WriteDataW: 1 test1: 25 test2: 1 test3: 4274453731
+# Result: 3 PCW: 228 DataAdrW: 3 WriteDataW: 1 test1: 4 test2: 1 test3: 1180179
+# 34. bgeu is executing
+# Result: 2 PCW: 232 DataAdrW: 2 WriteDataW: 0 test1: 13 test2: 0 test3: 4294346387
+# Result: 1 PCW: 236 DataAdrW: 1 WriteDataW: 1 test1: 25 test2: 1 test3: 4274453731
+# Result: 4 PCW: 228 DataAdrW: 4 WriteDataW: 1 test1: 4 test2: 1 test3: 1180179
+# 34. bgeu is executing
+# Result: 1 PCW: 232 DataAdrW: 1 WriteDataW: 0 test1: 13 test2: 0 test3: 4294346387
+# Result: 0 PCW: 236 DataAdrW: 0 WriteDataW: 1 test1: 25 test2: 1 test3: 4274453731
+# Result: 5 PCW: 228 DataAdrW: 5 WriteDataW: 1 test1: 4 test2: 1 test3: 1180179
+# 34. bgeu is executing
+# Result: 0 PCW: 232 DataAdrW: 0 WriteDataW: 0 test1: 13 test2: 0 test3: 4294346387
+# Result: 4294967295 PCW: 236 DataAdrW: 4294967295 WriteDataW: 1 test1: 25 test2: 1 test3: 4274453731
+# Result: 0 PCW: 240 DataAdrW: 0 WriteDataW: 0 test1: 13 test2: 0 test3: 13633203
+# 34. bgeu implementation is correct 
+# Result: 0 PCW: 244 DataAdrW: 0 WriteDataW: 0 test1: 4 test2: 0 test3: 531
+# Result: 5 PCW: 248 DataAdrW: 5 WriteDataW: 1001 test1: 14 test2: 9 test3: 5244691
+# Result: 0 PCW: 252 DataAdrW: 0 WriteDataW: 0 test1: 15 test2: 0 test3: 1939
+# Result: 1 PCW: 256 DataAdrW: 1 WriteDataW: 1 test1: 4 test2: 1 test3: 1180179
+# 35. bne is executing
+# Result: 1 PCW: 260 DataAdrW: 1 WriteDataW: 1 test1: 15 test2: 1 test3: 1542035
+# Result: 4294967292 PCW: 264 DataAdrW: 4294967292 WriteDataW: 101 test1: 25 test2: 5 test3: 4276591843
+# Result: 2 PCW: 256 DataAdrW: 2 WriteDataW: 1 test1: 4 test2: 1 test3: 1180179
+# 35. bne is executing
+# Result: 2 PCW: 260 DataAdrW: 2 WriteDataW: 1 test1: 15 test2: 1 test3: 1542035
+# Result: 4294967293 PCW: 264 DataAdrW: 4294967293 WriteDataW: 101 test1: 25 test2: 5 test3: 4276591843
+# Result: 3 PCW: 256 DataAdrW: 3 WriteDataW: 1 test1: 4 test2: 1 test3: 1180179
+# 35. bne is executing
+# Result: 3 PCW: 260 DataAdrW: 3 WriteDataW: 1 test1: 15 test2: 1 test3: 1542035
+# Result: 4294967294 PCW: 264 DataAdrW: 4294967294 WriteDataW: 101 test1: 25 test2: 5 test3: 4276591843
+# Result: 4 PCW: 256 DataAdrW: 4 WriteDataW: 1 test1: 4 test2: 1 test3: 1180179
+# 35. bne is executing
+# Result: 4 PCW: 260 DataAdrW: 4 WriteDataW: 1 test1: 15 test2: 1 test3: 1542035
+# Result: 4294967295 PCW: 264 DataAdrW: 4294967295 WriteDataW: 101 test1: 25 test2: 5 test3: 4276591843
+# Result: 5 PCW: 256 DataAdrW: 5 WriteDataW: 1 test1: 4 test2: 1 test3: 1180179
+# 35. bne is executing
+# Result: 5 PCW: 260 DataAdrW: 5 WriteDataW: 1 test1: 15 test2: 1 test3: 1542035
+# Result: 0 PCW: 264 DataAdrW: 0 WriteDataW: 101 test1: 25 test2: 5 test3: 4276591843
+# Result: 5 PCW: 268 DataAdrW: 5 WriteDataW: 101 test1: 15 test2: 5 test3: 15730611
+# 35. bne implementation is correct 
+# Result: 0 PCW: 272 DataAdrW: 0 WriteDataW: 0 test1: 4 test2: 0 test3: 531
+# Result: 2 PCW: 276 DataAdrW: 2 WriteDataW: 10000 test1: 16 test2: 16 test3: 2099219
+# Result: 3 PCW: 280 DataAdrW: 3 WriteDataW: 11111111111111111111111111111101 test1: 17 test2: 4294967293 test3: 3147923
+# Result: 1 PCW: 284 DataAdrW: 1 WriteDataW: 1 test1: 4 test2: 1 test3: 1180179
+# 36. beq is executing
+# Result: 3 PCW: 288 DataAdrW: 3 WriteDataW: 1 test1: 16 test2: 1 test3: 1574931
+# Result: 0 PCW: 292 DataAdrW: 0 WriteDataW: 11 test1: 25 test2: 3 test3: 4279766243
+# Result: 2 PCW: 284 DataAdrW: 2 WriteDataW: 1 test1: 4 test2: 1 test3: 1180179
+# 36. beq is executing
+# Result: 4 PCW: 288 DataAdrW: 4 WriteDataW: 1 test1: 16 test2: 1 test3: 1574931
+# Result: 1 PCW: 292 DataAdrW: 1 WriteDataW: 11 test1: 25 test2: 3 test3: 4279766243
+# Result: 4 PCW: 296 DataAdrW: 4 WriteDataW: 100 test1: 16 test2: 4 test3: 16779315
+# 36. beq implementation is correct 
+# Result: 304 PCW: 300 DataAdrW: 308 WriteDataW: 1000 test1: 31 test2: 8 test3: 322965479
+# Result: 304 PCW: 308 DataAdrW: 304 WriteDataW: 100110000 test1: 31 test2: 304 test3: 32509875
+# 37. jalr implementation is correct 
+# Result: 316 PCW: 312 DataAdrW: 0 WriteDataW: 0 test1: 4 test2: 0 test3: 623
+# 38. jal implementation is correct 
+# Faulty Instructions =>           0
+# No errors encountered, congratulations!
+# ** Note: $stop    : E:/e_yantra/task 1/eb_3699_task1c/t1c_riscv_cpu/.test/tb.v(534)
+#    Time: 1705 ns  Iteration: 1  Instance: /tb
+# Break in Module tb at E:/e_yantra/task 1/eb_3699_task1c/t1c_riscv_cpu/.test/tb.v line 534
+# End time: 23:21:29 on Feb 22,2025, Elapsed time: 0:13:44
+# Errors: 0, Warnings: 0

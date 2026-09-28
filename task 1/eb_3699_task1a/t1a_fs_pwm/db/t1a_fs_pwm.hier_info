@@ -1,0 +1,31 @@
+|t1a_fs_pwm_bdf
+clk_50MHz => clk_50MHz.IN1
+pulse_width[0] => pulse_width[0].IN1
+pulse_width[1] => pulse_width[1].IN1
+pulse_width[2] => pulse_width[2].IN1
+pulse_width[3] => pulse_width[3].IN1
+pwm_signal << pwm_generator:b2v_inst1.pwm_signal
+clk_500Hz << pwm_generator:b2v_inst1.clk_500Hz
+clk_1MHz << SYNTHESIZED_WIRE_0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|t1a_fs_pwm_bdf|frequency_scaler:b2v_inst
+clk_50MHz => clk_1MHz~reg0.CLK
+clk_50MHz => counter[0].CLK
+clk_50MHz => counter[1].CLK
+clk_50MHz => counter[2].CLK
+clk_50MHz => counter[3].CLK
+clk_50MHz => counter[4].CLK
+clk_1MHz <= clk_1MHz~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|t1a_fs_pwm_bdf|pwm_generator:b2v_inst1
+clk_1MHz => ~NO_FANOUT~
+pulse_width[0] => ~NO_FANOUT~
+pulse_width[1] => ~NO_FANOUT~
+pulse_width[2] => ~NO_FANOUT~
+pulse_width[3] => ~NO_FANOUT~
+clk_500Hz <= <VCC>
+pwm_signal <= <VCC>
+
+

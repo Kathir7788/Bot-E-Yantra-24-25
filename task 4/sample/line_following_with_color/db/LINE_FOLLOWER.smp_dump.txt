@@ -1,0 +1,6 @@
+
+State Machine - |color_sensor|t1b_cd_fd:inst32|filter_cs_out
+Name filter_cs_out.01 filter_cs_out.11 filter_cs_out.00 
+filter_cs_out.00 0 0 0 
+filter_cs_out.01 1 0 1 
+filter_cs_out.11 0 1 1 

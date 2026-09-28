@@ -1,0 +1,89 @@
+|color_sensor
+s0 <= rgb:inst5.s0
+clk_50MHZ => frequency_scaler:inst.clk_50MHz
+cs_out => t1b_cd_fd:inst32.cs_out
+s1 <= rgb:inst5.s1
+s2 <= rgb:inst5.s2
+s3 <= rgb:inst5.s3
+OE <= rgb:inst5.OE
+EL1_b <= rgb:inst5.blue
+EL2_b <= rgb:inst5.blue
+EL3_b <= rgb:inst5.blue
+MI_B <= rgb:inst5.blue
+EL1_r <= rgb:inst5.red
+EL2_r <= rgb:inst5.red
+EL3_r <= rgb:inst5.red
+MI_R <= rgb:inst5.red
+EL1_g <= rgb:inst5.green
+EL2_g <= rgb:inst5.green
+EL3_g <= rgb:inst5.green
+MI_G <= rgb:inst5.green
+
+
+|color_sensor|rgb:inst5
+filter[0] => s3.DATAIN
+filter[1] => s2.DATAIN
+color[0] => Decoder0.IN1
+color[1] => Decoder0.IN0
+blue <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+red <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+green <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+s0 <= <VCC>
+s1 <= <VCC>
+OE <= <GND>
+s2 <= filter[1].DB_MAX_OUTPUT_PORT_TYPE
+s3 <= filter[0].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|color_sensor|t1b_cd_fd:inst32
+clk_1MHz => color[0]~reg0.CLK
+clk_1MHz => color[1]~reg0.CLK
+clk_1MHz => filter_cs_out[0].CLK
+clk_1MHz => filter_cs_out[1].CLK
+clk_1MHz => sample_cs_out[0].CLK
+clk_1MHz => sample_cs_out[1].CLK
+clk_1MHz => sample_cs_out[2].CLK
+clk_1MHz => sample_cs_out[3].CLK
+clk_1MHz => sample_cs_out[4].CLK
+clk_1MHz => sample_cs_out[5].CLK
+clk_1MHz => sample_cs_out[6].CLK
+clk_1MHz => sample_cs_out[7].CLK
+clk_1MHz => sample_cs_out[8].CLK
+clk_1MHz => filter[0]~reg0.CLK
+clk_1MHz => filter[1]~reg0.CLK
+clk_1MHz => clk_count[0].CLK
+clk_1MHz => clk_count[1].CLK
+clk_1MHz => clk_count[2].CLK
+clk_1MHz => clk_count[3].CLK
+clk_1MHz => clk_count[4].CLK
+clk_1MHz => clk_count[5].CLK
+clk_1MHz => clk_count[6].CLK
+clk_1MHz => clk_count[7].CLK
+clk_1MHz => clk_count[8].CLK
+cs_out => en.CLK
+cs_out => cs_out_count[0].CLK
+cs_out => cs_out_count[1].CLK
+cs_out => cs_out_count[2].CLK
+cs_out => cs_out_count[3].CLK
+cs_out => cs_out_count[4].CLK
+cs_out => cs_out_count[5].CLK
+cs_out => cs_out_count[6].CLK
+cs_out => cs_out_count[7].CLK
+cs_out => cs_out_count[8].CLK
+filter[0] <= filter[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+filter[1] <= filter[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+color[0] <= color[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+color[1] <= color[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|color_sensor|frequency_scaler:inst
+clk_50MHz => clk_1MHz~reg0.CLK
+clk_50MHz => counter[0].CLK
+clk_50MHz => counter[1].CLK
+clk_50MHz => counter[2].CLK
+clk_50MHz => counter[3].CLK
+clk_50MHz => counter[4].CLK
+clk_50MHz => counter[5].CLK
+clk_1MHz <= clk_1MHz~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

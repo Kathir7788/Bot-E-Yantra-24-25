@@ -1,0 +1,80 @@
+module cpu_starter(
+    input clk_3125,
+    input cpu_en,
+    input [4:0] future_node,
+    input [4:0] EP,
+    output reg reset,
+    output reg Ext_MemWrite,
+    output reg [31:0] Ext_WriteData,
+    output reg [31:0] Ext_DataAdr
+);
+integer count;
+reg en;
+
+initial begin
+  en = 0;
+  count = 0;
+  reset = 1;
+  future_node = 8;
+  EP = 11;
+end
+
+always @(posedge clk_3125) begin
+	if (cpu_en == 1 || en == 1) begin
+		en = 1;
+		count = count + 1;
+
+		case (count)
+			 1: begin
+				  reset = 1; 
+				  Ext_MemWrite = 1; 
+				  Ext_WriteData = future_node; 
+				  Ext_DataAdr = 32'h02000000;
+			 end
+			 2: begin
+				  Ext_MemWrite = 0; 
+				  Ext_WriteData = 32'h0; 
+				  Ext_DataAdr = 32'h0;
+			 end
+			 3: begin
+				  Ext_MemWrite = 1; 
+				  Ext_WriteData = EP; 
+				  Ext_DataAdr = 32'h02000004;
+			 end
+			 4: begin
+				  Ext_MemWrite = 0; 
+				  Ext_WriteData = 32'h0; 
+				  Ext_DataAdr = 32'h0;
+			 end
+			 5: begin
+				  Ext_MemWrite = 1; 
+				  Ext_WriteData = 32'h0; 
+				  Ext_DataAdr = 32'h02000008;
+			 end
+			 6: begin
+				  Ext_MemWrite = 0; 
+				  Ext_WriteData = 32'h0; 
+				  Ext_DataAdr = 32'h0;
+			 end
+			 7: begin
+				  Ext_MemWrite = 1; 
+				  Ext_WriteData = 32'h0; 
+				  Ext_DataAdr = 32'h0200000c;
+			 end
+			 8: begin
+				  Ext_MemWrite = 0; 
+				  Ext_WriteData = 32'h0; 
+				  Ext_DataAdr = 32'h0;
+			 end
+			 9: begin
+				  reset = 0;
+				  Ext_MemWrite = 0; 
+				  Ext_WriteData = 32'h0; 
+				  Ext_DataAdr = 32'h0;
+				  en = 0;
+				  count = 0;
+			 end
+		endcase
+	end
+end
+endmodule
